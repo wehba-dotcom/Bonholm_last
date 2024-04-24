@@ -29,3 +29,11 @@ C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\o
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\obj\Debug\net7.0\WebApi.pdb
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\obj\Debug\net7.0\WebApi.genruntimeconfig.cache
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\obj\Debug\net7.0\ref\WebApi.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\obj\Debug\net7.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\obj\Debug\net7.0\WebApi.csproj.Up2Date
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\WebApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

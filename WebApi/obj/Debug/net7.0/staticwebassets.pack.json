@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\WEHBA\\OneDrive\\Skrivebord\\Bornholm_last\\Bornholm-Local-History\\WebApi\\wwwroot\\images\\bornholm.jpg",
+      "PackagePath": "staticwebassets\\images\\bornholm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\WEHBA\\OneDrive\\Skrivebord\\Bornholm_last\\Bornholm-Local-History\\WebApi\\wwwroot\\images\\bornholm_green.jpg",
+      "PackagePath": "staticwebassets\\images\\bornholm_green.jpg"
+    },
+    {
+      "Id": "C:\\Users\\WEHBA\\OneDrive\\Skrivebord\\Bornholm_last\\Bornholm-Local-History\\WebApi\\wwwroot\\images\\image2.jpg",
+      "PackagePath": "staticwebassets\\images\\image2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\WEHBA\\OneDrive\\Skrivebord\\Bornholm_last\\Bornholm-Local-History\\WebApi\\wwwroot\\images\\logo_project.png",
+      "PackagePath": "staticwebassets\\images\\logo_project.png"
+    },
+    {
       "Id": "C:\\Users\\WEHBA\\OneDrive\\Skrivebord\\Bornholm_last\\Bornholm-Local-History\\WebApi\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
