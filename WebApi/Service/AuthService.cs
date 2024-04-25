@@ -12,6 +12,7 @@ namespace WebApi.Service
             _baseService = baseService;
         }
 
+
         public async Task<ResponseDto?> AssignRoleAsync(RegistrationRequest registrationRequest)
         {
             return await _baseService.SendAsync(new RequestDto()
