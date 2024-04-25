@@ -66,7 +66,7 @@ namespace WebApi.Service
                 ApiType = SD.ApiType.PUT,
                 Data = feallesbase,
                 Url = SD.FeallesAPIBase + "/api/feallesbase",
-                ContentType = SD.ContentType.MultipartFormData
+                //ContentType = SD.ContentType.MultipartFormData
             });
         }
     }
