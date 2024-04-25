@@ -7,7 +7,7 @@ namespace WebApi.Service.IService
     {
         Task<ResponseDto?> GetFeallesAsync(string feallesname);
         Task<ResponseDto?> GetAllFeallesesAsync();
-        Task<ResponseDto?> GetFeallesByIdAsync(int id);
+        Task<ResponseDto?> GetFeallesByIdAsync(int ID);
         Task<ResponseDto?> CreateFeallesAsync(Feallesbase feallesbase);
         Task<ResponseDto?> UpdateFeallesAsync(Feallesbase feallesbase);
         Task<ResponseDto?> DeleteFeallesAsync(int id);

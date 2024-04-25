@@ -367,7 +367,7 @@ namespace WebApi.Controllers
 
                 if (response != null && response.IsSuccess)
                 {
-                    TempData["success"] = "Coupon created successfully";
+                    TempData["success"] = "Feallesbase created successfully";
                     return RedirectToAction(nameof(Index));
                 }
                 else
@@ -404,7 +404,7 @@ namespace WebApi.Controllers
 
                 if (response != null && response.IsSuccess)
                 {
-                    TempData["success"] = "Product updated successfully";
+                    TempData["success"] = "FeallesBase updated successfully";
                     return RedirectToAction(nameof(Index));
                 }
                 else
@@ -415,38 +415,38 @@ namespace WebApi.Controllers
             return View(feallesbase);
         }
 
-        //    public async Task<IActionResult> CouponDelete(int couponId)
-        //    {
-        //        ResponseDto? response = await _couponService.GetCouponByIdAsync(couponId);
+        public async Task<IActionResult> Delete(int ID)
+        {
+            ResponseDto? response = await _feallesService.GetFeallesByIdAsync(ID);
 
-        //        if (response != null && response.IsSuccess)
-        //        {
-        //            CouponDto? model = JsonConvert.DeserializeObject<CouponDto>(Convert.ToString(response.Result));
-        //            return View(model);
-        //        }
-        //        else
-        //        {
-        //            TempData["error"] = response?.Message;
-        //        }
-        //        return NotFound();
-        //    }
+            if (response != null && response.IsSuccess)
+            {
+                Feallesbase? model = JsonConvert.DeserializeObject<Feallesbase>(Convert.ToString(response.Result));
+                return View(model);
+            }
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
+            return NotFound();
+        }
 
-        //    [HttpPost]
-        //    public async Task<IActionResult> CouponDelete(CouponDto couponDto)
-        //    {
-        //        ResponseDto? response = await _couponService.DeleteCouponsAsync(couponDto.CouponId);
+        [HttpPost]
+        public async Task<IActionResult> Delete(Feallesbase feallesbase)
+        {
+            ResponseDto? response = await _feallesService.DeleteFeallesAsync(feallesbase.ID);
 
-        //        if (response != null && response.IsSuccess)
-        //        {
-        //            TempData["success"] = "Coupon deleted successfully";
-        //            return RedirectToAction(nameof(CouponIndex));
-        //        }
-        //        else
-        //        {
-        //            TempData["error"] = response?.Message;
-        //        }
-        //        return View(couponDto);
-        //    }
+            if (response != null && response.IsSuccess)
+            {
+                TempData["success"] = "FeallesBase deleted successfully";
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
+            return View(feallesbase);
+        }
 
 
     }

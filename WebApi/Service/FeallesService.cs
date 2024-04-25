@@ -23,12 +23,12 @@ namespace WebApi.Service
             });
         }
 
-        public async Task<ResponseDto?> DeleteFeallesAsync(int id)
+        public async Task<ResponseDto?> DeleteFeallesAsync(int ID)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.DELETE,
-                Url = SD.FeallesAPIBase + "/api/feallesbase/" + id
+                Url = SD.FeallesAPIBase + "/api/feallesbase/" + ID
             }); 
         }
 

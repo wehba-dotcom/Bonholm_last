@@ -52,7 +52,7 @@ namespace FeallesBaseApi.Controllers
 
 
             // GET: api/Feallesbase/5
-            [HttpGet("{id}")]
+            [HttpGet("{ID}")]
         public ResponseDto GetFeallesbase(int id)
         {
             try
