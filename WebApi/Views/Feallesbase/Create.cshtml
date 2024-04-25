@@ -82,11 +82,27 @@
                         <input asp-for="Begravelsesdato" class="form-control" />
                         <span asp-validation-for="Begravelsesdato" class="text-danger"></span>
                     </div>
-                    <div class="mp-3">
+                   @*  <div class="mp-3">
                         <label asp-for="Begravelsessted" class="form-label"></label>
                         <input asp-for="Begravelsessted" class="form-control" />
                         <span asp-validation-for="Begravelsessted" class="text-danger"></span>
-                    </div>
+                    </div> *@
+                            <div class="form-group">
+                                <label asp-for="Begravelsessted" class="control-label"></label>
+                                <select asp-for="Begravelsessted" class="form-control">
+                                    <option value="Ingen" selected="selected"> Ingen </option>
+                                    <option value="Adventkirken, Tejn">Adventkirken, Tejn</option>
+                                    <option value="Allinge Kapel">Allinge Kapel</option>
+                                    <option value="Allinge Kirke">Allinge Kirke</option>
+                                    <option value="Ansgar kirke, Odense">Ansgar kirke, Odense</option>
+                                    <option value="Askov kirke">Askov kirke</option>
+                                </select>
+                                <span asp-validation-for="Begravelsessted" class="text-danger"></span>
+                            </div>
+
+
+
+
                     <div class="mp-3">
                         <label asp-for="Efterladte" class="form-label"></label>
                         <input asp-for="Efterladte" class="form-control" />
