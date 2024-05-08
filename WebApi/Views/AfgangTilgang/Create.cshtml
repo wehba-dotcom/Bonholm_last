@@ -1,0 +1,150 @@
+﻿@model WebApi.SharedModels.AfgangTilgang
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-black-50 pl-3">Tilføj AfgangTilgang</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" asp-action="Create">
+            <div class=" border p-3">
+                <div class="form-group row text-center">
+                </div>
+                <div class="col">
+                    <div class="row-12">
+                        <div class="form-group col">
+                            <div asp-validation-summary="All"></div>
+                            <div class="mp-3">
+                                <label asp-for="Sogn" class="form-label"></label>
+                                <input asp-for="Sogn" class="form-control" />
+                                <span asp-validation-for="Sogn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="SogneNo" class="form-label"></label>
+                                <input asp-for="SogneNo" class="form-control" />
+                                <span asp-validation-for="SogneNo" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Billedfil" class="form-label"></label>
+                                <input asp-for="Billedfil" class="form-control" />
+                                <span asp-validation-for="Billedfil" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Folieside" class="form-label"></label>
+                                <input asp-for="Folieside" class="form-control" />
+                                <span asp-validation-for="Folieside" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Liste" class="form-label"></label>
+                                <input asp-for="Liste" class="form-control" />
+                                <span asp-validation-for="Liste" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Aar" class="form-label"></label>
+                                <input asp-for="Aar" class="form-control" />
+                                <span asp-validation-for="Aar" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="No" class="form-label"></label>
+                                <input asp-for="No" class="form-control" />
+                                <span asp-validation-for="No" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Familieno" class="form-label"></label>
+                                <input asp-for="Familieno" class="form-control" />
+                                <span asp-validation-for="Familieno" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fornavn" class="form-label"></label>
+                                <input asp-for="Fornavn" class="form-control" />
+                                <span asp-validation-for="Fornavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Efternavn" class="form-label"></label>
+                                <input asp-for="Efternavn" class="form-control" />
+                                <span asp-validation-for="Efternavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Sleagtsnavn" class="form-label"></label>
+                                <input asp-for="Sleagtsnavn" class="form-control" />
+                                <span asp-validation-for="Sleagtsnavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Alder" class="form-label"></label>
+                                <input asp-for="Alder" class="form-control" />
+                                <span asp-validation-for="Alder" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fodeaar" class="form-label"></label>
+                                <input asp-for="Fodeaar" class="form-control" />
+                                <span asp-validation-for="Fodeaar" class="text-danger"></span>
+                            </div>
+                             <div class="mp-3">
+                                <label asp-for="Haandtering" class="form-label"></label>
+                                <input asp-for="Haandtering" class="form-control" />
+                                <span asp-validation-for="Haandtering" class="text-danger"></span>
+                            </div>
+                          @*   <div class="form-group">
+                                <label asp-for="Begravelsessted" class="control-label"></label>
+                                <select asp-for="Begravelsessted" class="form-control">
+                                    <option value="Ingen" selected="selected"> Ingen </option>
+                                    <option value="Adventkirken, Tejn">Adventkirken, Tejn</option>
+                                    <option value="Allinge Kapel">Allinge Kapel</option>
+                                    <option value="Allinge Kirke">Allinge Kirke</option>
+                                    <option value="Ansgar kirke, Odense">Ansgar kirke, Odense</option>
+                                    <option value="Askov kirke">Askov kirke</option>
+                                </select>
+                                <span asp-validation-for="Begravelsessted" class="text-danger"></span>
+                            </div> *@
+
+
+
+
+                            <div class="mp-3">
+                                <label asp-for="Hvorhenrejst" class="form-label"></label>
+                                <input asp-for="Hvorhenrejst" class="form-control" />
+                                <span asp-validation-for="Hvorhenrejst" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Hvorfraankommet" class="form-label"></label>
+                                <input asp-for="Hvorfraankommet" class="form-control" />
+                                <span asp-validation-for="Hvorfraankommet" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="HvoriJeavnfReg" class="form-label"></label>
+                                <input asp-for="HvoriJeavnfReg" class="form-control" />
+                                <span asp-validation-for="HvoriJeavnfReg" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Anmearkning" class="form-label"></label>
+                                <input asp-for="Anmearkning" class="form-control" />
+                                <span asp-validation-for="Anmearkning" class="text-danger"></span>
+                            </div>
+                           
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+
+                                <input type="submit" class="btn btn-primary w-75" value="Tilføj" />
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a asp-action="Index" class="btn btn-primary w-75">Tilbage</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+<br />
