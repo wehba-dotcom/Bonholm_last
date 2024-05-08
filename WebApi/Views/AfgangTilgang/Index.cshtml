@@ -1,0 +1,199 @@
+﻿@model IEnumerable<WebApi.SharedModels.AfgangTilgang>
+
+@{
+    ViewData["Title"] = "Index";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if(ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-black-50 pl-3">Liste AfgangTilgane</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pt-4">
+        <div class="col-4 text-right">
+        <a asp-controller="AfgangTilgang" asp-action="Create" class="btn btn-primary w-50"><i class="bi bi-plus-circle-fill"></i>  Tilføj Ny</a>
+        </div>
+        <div class="col-4 text-">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary w-50"><i class="bi bi-backspace"></i>  Tilbage</a>
+        </div>
+    </div>
+
+    <hr/>
+<form asp-controller="AfgangTilgang" asp-action="Index">
+    <div>
+        Fornavne: <input type="text" name="Fornavne" />
+        DeodsDato: <input type="datetime" name="DoedDato" />
+        <input type="submit" value="Søg" />
+         <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+    </div>
+  </form>
+<form asp-controller="AfgangTilgang" asp-action="Index">
+    <div>
+        ID: <input type="number" name="ID" />
+       
+        <input type="submit" value="Søg" />
+        <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+    </div>
+</form>
+    <hr />
+    <br />
+
+    @if (pager.TotalPages > 0)
+    {
+        <ul class="pagination justify-content-end">
+            @if (pager.CurrentPage > 1)
+            {
+                <li class="page-item ">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="1">First</a>
+                </li>
+                <li class="page-item ">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@(pager.CurrentPage-1)">Previouse</a>
+                </li>
+            }
+            @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+            {
+                <li class="page-item @(pge == pager.CurrentPage? "active":"")">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@pge">@pge</a>
+                </li>
+            }
+            @if (pager.CurrentPage < pager.TotalPages)
+            {
+                <li class="page-item ">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@(pager.CurrentPage+1)">Next</a>
+                </li>
+                <li class="page-item ">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@(pager.TotalPages)">Last</a>
+                </li>
+            }
+        </ul>
+    }
+
+ 
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" >
+            <thead>
+                <tr>
+                    <th> ID</th>
+                <th> Sogn </th>
+                <th>SogneNo</th>
+                <th> Billedfil </th>
+                <th> Folieside</th>
+                <th>Liste</th>
+                <th>Aar</th>
+                <th>No</th>
+                <th>Familieno</th>
+                <th>Fornavn</th>
+                <th> Efternavn </th>
+                <th>Sleagtsnavn </th>
+                <th>Alder </th>
+                <th> Fodeaar </th>
+                <th> Haandtering</th>
+                <th>Hvorhenrejst</th>
+                <th>Hvorfraankommet </th>
+                <th>HvoriJeavnfReg </th>
+                <th>Anmearkning </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="5%">@item.ID</td>
+                        <td width="5%">@item.Sogn</td>
+                        <td width="5%">@item.SogneNo</td>
+                        <td width="5%">@item.Billedfil</td>
+                        <td width="5%">@item.Folieside</td>
+                        <td width="5%">@item.Liste</td>
+                        <td width="5%">@item.Aar</td>
+                        <td width="5%">@item.No</td>
+                        <td width="5%">@item.Familieno</td>
+                        <td width="5%">@item.Fornavn</td>
+                        <td width="5%">@item.Efternavn</td>
+                        <td width="5%">@item.Sleagtsnavn</td>
+                        <td width="5%">@item.Alder</td>
+                        <td width="5%">@item.Fodeaar</td>
+                        <td width="5%">@item.Haandtering</td>
+                        <td width="5%">@item.Hvorhenrejst</td>
+                        <td width="5%">@item.Hvorfraankommet</td>
+                        <td width="5%">@item.HvoriJeavnfReg</td>
+                        <td width="5%">@item.Anmearkning</td>
+                        
+                        <td>
+                            <div class=" btn-group" role="group">
+                         
+                                <a asp-controller="Feallesbase" asp-action="FeallesEdit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
+                                </div>
+                        </td>
+                         <td>
+                            <div>
+                                <a asp-controller="Feallesbase" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
+                            </div>
+                         </td>
+                        
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Ingen elementer oprettet endnu</p>
+    }
+
+ 
+     @if(pager.TotalPages>0)
+     {
+        <ul class="pagination justify-content-end">
+             @if(pager.CurrentPage> 1)
+             {
+                <li class="page-item ">
+                    <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="1">First</a>
+                </li>
+                <li class="page-item ">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@(pager.CurrentPage-1)">Previouse</a>
+                </li>
+             }
+           @for(var pge = pager.StartPage; pge<= pager.EndPage; pge++)
+           {
+            <li class="page-item @(pge == pager.CurrentPage? "active":"")">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@pge">@pge</a>
+            </li>    
+           }
+            @if (pager.CurrentPage < pager.TotalPages)
+            {
+                <li class="page-item ">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@(pager.CurrentPage+1)">Next</a>
+                </li>
+                <li class="page-item ">
+                <a class="page-link" asp-controller="AfgangTilgang" asp-action="Index" asp-route-pg="@(pager.TotalPages)">Last</a>
+                </li>
+            }
+        </ul>
+     }
+ <br/>
+
+  
+ 
+ 
+ 
+
+
+
+
+
+
+
+

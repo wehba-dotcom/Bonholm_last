@@ -1,11 +1,3 @@
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.csproj.AssemblyReference.cache
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.AssemblyInfoInputs.cache
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.AssemblyInfo.cs
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.csproj.CoreCompileInputs.cache
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.sourcelink.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\appsettings.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\AfgangTilgangApi.exe
@@ -242,6 +234,14 @@ C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTi
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.csproj.AssemblyReference.cache
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.AssemblyInfoInputs.cache
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.AssemblyInfo.cs
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.csproj.CoreCompileInputs.cache
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\AfgangTilgangApi.sourcelink.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\obj\Debug\net7.0\staticwebassets\msbuild.AfgangTilgangApi.Microsoft.AspNetCore.StaticWebAssets.props

@@ -9,9 +9,11 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<IAuthService, AuthService>();
 builder.Services.AddHttpClient<IFeallesService, FeallesService>();
+builder.Services.AddHttpClient<IAfgangTilgangService, AfgangTilgangService>();
 
 SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
 SD.FeallesAPIBase = builder.Configuration["ServiceUrls:Feallesbase"];
+SD.AfgangTilgangAPIBase = builder.Configuration["ServiceUrls:AfgangTilgang"];
 
 
 
@@ -19,6 +21,7 @@ builder.Services.AddScoped<ITokenProvider, TokenProvider>();
 builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddScoped<IFeallesService, FeallesService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAfgangTilgangService, AfgangTilgangService>();
 
 
 

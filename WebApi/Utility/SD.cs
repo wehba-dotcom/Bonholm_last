@@ -5,7 +5,7 @@
        
         public static string AuthAPIBase { get; set; }
         public static string FeallesAPIBase { get; set; }
-        public static string ProductAPIBase { get; set; }
+        public static string AfgangTilgangAPIBase { get; set; }
         public static string OrderAPIBase { get; set; }
         public static string GateWayIBase {  get; set; }
 
