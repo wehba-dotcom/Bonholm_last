@@ -9,8 +9,8 @@ namespace AfgangTilgangApi.Controllers
 
     [Route("api/afgangtilgang")]
     [ApiController]
-    [Authorize]
-    public class AfgangTilgangController : Controller
+   // [Authorize]
+    public class AfgangTilgangController : ControllerBase
     {
 
         private readonly AppDbContext _db;
@@ -46,12 +46,12 @@ namespace AfgangTilgangApi.Controllers
 
 
         // GET: api/AfgangTilgang/5
-        [HttpGet("{ID}")]
-        public ResponseDto GetAfgangTilgang(int ID)
+        [HttpGet("{id}")]
+        public ResponseDto GetAfgangTilgang(int id)
         {
             try
             {
-                AfgangTilgang obj = _db.AfgangTilgang.First(u => u.ID == ID);
+                AfgangTilgang obj = _db.AfgangTilgang.First(u => u.ID == id);
                 _response.Result = _mapper.Map<AfgangTilgang>(obj);
             }
             catch (Exception ex)

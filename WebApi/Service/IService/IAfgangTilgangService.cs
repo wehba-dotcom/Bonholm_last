@@ -7,7 +7,7 @@ namespace WebApi.Service.IService
     {
         Task<ResponseDto?> GetAfgansAsync(string feallesname);
         Task<ResponseDto?> GetAllAfgangsAsync();
-        Task<ResponseDto?> GetAfgangsByIdAsync(int ID);
+        Task<ResponseDto?> GetAfgangsByIdAsync(int id);
         Task<ResponseDto?> CreateAfgangsAsync(AfgangTilgang afgangTilgang);
         Task<ResponseDto?> UpdateAfgangsAsync(AfgangTilgang afgangTilgang);
         Task<ResponseDto?> DeleteAfgangsAsync(int ID);

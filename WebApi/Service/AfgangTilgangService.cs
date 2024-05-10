@@ -31,12 +31,12 @@ namespace WebApi.Service
             });
         }
 
-        public async Task<ResponseDto?> GetAfgangsByIdAsync(int ID)
+        public async Task<ResponseDto?> GetAfgangsByIdAsync(int id)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.AfgangTilgangAPIBase + "/api/afgangtilgang"+ ID
+                Url = SD.AfgangTilgangAPIBase + "/api/afgangtilgang/"+ id
             });
         }
 

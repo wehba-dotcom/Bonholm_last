@@ -115,9 +115,9 @@ namespace WebApi.Controllers
             return View(afgangTilgang);
         }
 
-        public async Task<IActionResult> Delete(int ID)
+        public async Task<IActionResult> Delete(int id)
         {
-            ResponseDto? response = await _afgangTilgangService.GetAfgangsByIdAsync(ID);
+            ResponseDto? response = await _afgangTilgangService.GetAfgangsByIdAsync(id);
 
             if (response != null && response.IsSuccess)
             {

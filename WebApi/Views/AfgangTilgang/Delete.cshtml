@@ -10,7 +10,7 @@
     </div>
  <div class="card-body p-4">
 
-    <form  asp-action="Delete">
+ <form  asp-action="Delete">
     <input asp-for="ID" hidden />
       <div class="border p-3">
         <div class="col">
@@ -76,7 +76,23 @@
                                 <label asp-for="Haandtering" class="form-label"></label>
                                 <input asp-for="Haandtering" disabled class="form-control" />
                     </div>
-                </div>
+                            <div class="mp-3">
+                                <label asp-for="Hvorhenrejst" class="form-label"></label>
+                                <input asp-for="Hvorhenrejst" disabled class="form-control" />
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Hvorfraankommet" class="form-label"></label>
+                                <input asp-for="Hvorfraankommet" disabled class="form-control" />
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="HvoriJeavnfReg" class="form-label"></label>
+                                <input asp-for="HvoriJeavnfReg" disabled class="form-control" />
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Anmearkning" class="form-label"></label>
+                                <input asp-for="Anmearkning" disabled class="form-control" />
+                            </div>
+                
                 <br/>
                 <div class="form-group row">
                     <div class="col-8 offset-2 row">
