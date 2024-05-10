@@ -79,9 +79,9 @@ namespace WebApi.Controllers
         }
 
 
-        public async Task<IActionResult> AfgangsEdit(int ID)
+        public async Task<IActionResult> AfgangsEdit(int id)
         {
-            ResponseDto? response = await _afgangTilgangService.GetAfgangsByIdAsync(ID);
+            ResponseDto? response = await _afgangTilgangService.GetAfgangsByIdAsync(id);
 
             if (response != null && response.IsSuccess)
             {
