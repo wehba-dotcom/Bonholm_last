@@ -1,3 +1,7 @@
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.Build.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Stripe.net.dll
+C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\System.Security.Permissions.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\appsettings.json
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\AfgangTilgangApi.exe
@@ -13,7 +17,6 @@ C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTi
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.Build.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.Build.Framework.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
@@ -31,7 +34,6 @@ C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTi
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Microsoft.Identity.Client.dll
@@ -64,7 +66,6 @@ C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTi
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\NuGet.ProjectModel.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\NuGet.Protocol.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\NuGet.Versioning.dll
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Stripe.net.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -81,7 +82,6 @@ C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTi
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\System.Runtime.Caching.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\System.Security.Permissions.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\System.Windows.Extensions.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\af\Humanizer.resources.dll
 C:\Users\WEHBA\OneDrive\Skrivebord\Bornholm_last\Bornholm-Local-History\AfgangTilgang\bin\Debug\net7.0\ar\Humanizer.resources.dll

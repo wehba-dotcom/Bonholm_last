@@ -9,7 +9,7 @@ namespace AfgangTilgangApi.Controllers
 
     [Route("api/afgangtilgang")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class AfgangTilgangController : ControllerBase
     {
 
