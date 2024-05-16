@@ -30,7 +30,6 @@ namespace WebApi.SharedModels
         public string? HvoriJeavnfReg { get; set; }
         public string? Anmærkning { get; set; }
 
-        public Byte[]? SSMA_TimeStamp { get; set; }
 
 
         public AfgangTilgang()
