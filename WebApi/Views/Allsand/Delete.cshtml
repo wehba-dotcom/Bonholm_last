@@ -1,0 +1,76 @@
+﻿@model WebApi.SharedModels.Allsand
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-black-50 pl-3 ">Slet Side</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+
+        <form asp-action="Delete">
+            <input asp-for="ID" hidden />
+            <div class="border p-3">
+                <div class="col">
+                    <div class="row-12">
+                        <div class="form-group col">
+                            <div class="mp-3">
+                                <label asp-for="Nr" class="form-label"></label>
+                                <input asp-for="Nr" disabled class="form-control" />
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Efternavn" class="form-label"></label>
+                                <input asp-for="Efternavn" disabled class="form-control" />
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fornavn" class="form-label"></label>
+                                <input asp-for="Fornavn" disabled class="form-control" />
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Erhverv" class="form-label"></label>
+                                <input asp-for="Erhverv" disabled class="form-control" />
+
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Sted" class="form-label"></label>
+                                <input asp-for="Sted" disabled class="form-control" />
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Borgerskab" class="form-label"></label>
+                                <input asp-for="Borgerskab" disabled class="form-control" />
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Klasse" class="form-label"></label>
+                                <input asp-for="Klasse" disabled class="form-control" />
+
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Tingsbogshenvisning" class="form-label"></label>
+                                <input asp-for="Tingsbogshenvisning" disabled class="form-control" />
+                            </div>
+                           
+
+                            <br />
+                            <div class="form-group row">
+                                <div class="col-8 offset-2 row">
+                                    <div class="col">
+                                        <input type="submit" class="btn btn-primary w-75" value="Slet" />
+                                    </div>
+                                    <div class="col">
+                                        <a asp-action="Index" class="btn btn-primary w-75">TilBage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+
+

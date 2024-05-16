@@ -21,7 +21,7 @@
 
 <div class="row pt-4">
     <div class="col-4 text-right">
-        <a asp-controller="AfgangTilgang" asp-action="Create" class="btn btn-primary w-50"><i class="bi bi-plus-circle-fill"></i>  Tilføj Ny</a>
+        <a asp-controller="Allsand" asp-action="Create" class="btn btn-primary w-50"><i class="bi bi-plus-circle-fill"></i>  Tilføj Ny</a>
     </div>
     <div class="col-4 text-">
         <a asp-controller="Home" asp-action="Index" class="btn btn-primary w-50"><i class="bi bi-backspace"></i>  Tilbage</a>
@@ -115,12 +115,12 @@
                     <td>
                         <div class=" btn-group" role="group">
 
-                            <a asp-controller="AfgangTilgang" asp-action="AfgangsEdit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
+                            <a asp-controller="Allsand" asp-action="AllsandEdit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
                         </div>
                     </td>
                     <td>
                         <div>
-                            <a asp-controller="AfgangTilgang" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
+                            <a asp-controller="Allsand" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
                         </div>
                     </td>
 
