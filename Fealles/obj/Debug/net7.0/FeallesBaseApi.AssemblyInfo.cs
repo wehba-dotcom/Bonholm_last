@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FeallesBaseApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e87fbc031d0567933aabc7b74dd5562c3d74cc1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+295a11b969e8bdc844bb48f835b26ddbf5ae1cd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("FeallesBaseApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FeallesBaseApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
