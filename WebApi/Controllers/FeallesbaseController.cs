@@ -44,13 +44,36 @@ namespace WebApi.Controllers
             int recsCount = list.Count();
             var pager = new WebApi.Models.Pager(recsCount, pg, pageSize);
             int resSkip = (pg - 1) * pageSize;
-            var data = list.Skip(resSkip).Take(pager.PageSize);
+            var data = list.Skip(resSkip).Take(pager.PageSize).ToList();
 
             //var data = objLists.ToList();
             this.ViewBag.Pager = pager;
 
             return View(data);
         }
+
+        public async Task<IActionResult> Search( string? Fornavne)
+        {
+            List<Feallesbase>? list = new();
+
+            ResponseDto? response = await _feallesService.Search(Fornavne);
+
+            if (response != null && response.IsSuccess)
+            {
+                list = JsonConvert.DeserializeObject<List<Feallesbase>>(Convert.ToString(response.Result));
+                
+            }
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
+
+
+
+            return View(list);
+        }
+
+
 
 
         public async Task<IActionResult> Create()

@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Authorization;
 using AutoMapper;
 using Stripe;
+using String = System.String;
 
 namespace FeallesBaseApi.Controllers
 {
@@ -36,10 +37,11 @@ namespace FeallesBaseApi.Controllers
         [HttpGet]
         public  ResponseDto GetFeallesbases()
         {
+
             try
             {
                 IEnumerable<Feallesbase> objList = _db.Feallesbases.ToList();
-                _response.Result = _mapper.Map<IEnumerable<Feallesbase>>(objList);
+                _response.Result = (objList);
             }
             catch (Exception ex)
             {
@@ -51,13 +53,44 @@ namespace FeallesBaseApi.Controllers
         }
 
 
-            // GET: api/Feallesbase/5
-            [HttpGet("{ID}")]
-        public ResponseDto GetFeallesbase(int id)
+        [HttpGet("{Fornavne}")]
+        
+        public ResponseDto Search( string? Fornavne)
+        {
+            var objList = from b in _db.Feallesbases select b;
+
+            try
+            {
+
+                
+
+               
+                    objList = objList.Where(b => b.Fornavne == Fornavne);
+
+                
+
+                _response.Result = objList;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
+
+
+
+
+
+
+        // GET: api/Feallesbase/5
+        [HttpGet("{ID:int}")]
+        public ResponseDto GetFeallesbase(int ID)
         {
             try
             {
-                Feallesbase obj = _db.Feallesbases.First(u => u.ID== id);
+                Feallesbase obj = _db.Feallesbases.First(u => u.ID== ID);
                 _response.Result = _mapper.Map<Feallesbase>(obj);
             }
             catch (Exception ex)
@@ -125,6 +158,8 @@ namespace FeallesBaseApi.Controllers
             }
             return _response;
         }
+
+      
 
         private bool FeallesbaseExists(int ID)
         {

@@ -5,7 +5,7 @@ namespace WebApi.Service.IService
 {
     public interface IFeallesService
     {
-        Task<ResponseDto?> GetFeallesAsync(string feallesname);
+        Task<ResponseDto?> Search(string Fornavne);
         Task<ResponseDto?> GetAllFeallesesAsync();
         Task<ResponseDto?> GetFeallesByIdAsync(int ID);
         Task<ResponseDto?> CreateFeallesAsync(Feallesbase feallesbase);

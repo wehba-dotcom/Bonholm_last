@@ -41,12 +41,12 @@ namespace WebApi.Service
             });
         }
 
-        public async Task<ResponseDto?> GetFeallesAsync(string feallesName)
+        public async Task<ResponseDto?> Search(string Fornavne)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.FeallesAPIBase + "/api/feallesbase/GetByCode/"+ feallesName
+                Url = SD.FeallesAPIBase + "/api/feallesbase/"+ Fornavne
             });
         }
 
