@@ -52,26 +52,32 @@ namespace WebApi.Controllers
             return View(data);
         }
 
-        public async Task<IActionResult> Search( string? Fornavne)
+        public async Task<IActionResult> Search(string? Fornavne)
         {
-            List<Feallesbase>? list = new();
+            List<Feallesbase>? list = new List<Feallesbase>();
 
-            ResponseDto? response = await _feallesService.Search(Fornavne);
-
-            if (response != null && response.IsSuccess)
+            try
             {
-                list = JsonConvert.DeserializeObject<List<Feallesbase>>(Convert.ToString(response.Result));
-                
+                ResponseDto? response = await _feallesService.Search(Fornavne);
+
+                if (response != null && response.IsSuccess)
+                {
+                    list = JsonConvert.DeserializeObject<List<Feallesbase>>(Convert.ToString(response.Result)) ?? new List<Feallesbase>();
+                }
+                else
+                {
+                    TempData["error"] = response?.Message ?? "An unknown error occurred.";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                TempData["error"] = response?.Message;
+                // Log the exception (you might want to use a logging framework for this)
+                TempData["error"] = $"An error occurred while searching: {ex.Message}";
             }
-
-
 
             return View(list);
         }
+
 
 
 

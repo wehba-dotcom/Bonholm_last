@@ -53,7 +53,7 @@ namespace FeallesBaseApi.Controllers
         }
 
 
-        [HttpGet("{Fornavne}")]
+        [HttpGet("search/{Fornavne}")]
         
         public ResponseDto Search( string? Fornavne)
         {
@@ -61,15 +61,14 @@ namespace FeallesBaseApi.Controllers
 
             try
             {
-
-                
-
-               
+                if (!String.IsNullOrEmpty(Fornavne))
+                {
                     objList = objList.Where(b => b.Fornavne == Fornavne);
-
-                
-
-                _response.Result = objList;
+                    _response.Result = objList;
+                }else if(String.IsNullOrEmpty(Fornavne))
+                {
+                    _response.Message = _response?.Message ?? "An unknown error occurred.";
+                }
             }
             catch (Exception ex)
             {

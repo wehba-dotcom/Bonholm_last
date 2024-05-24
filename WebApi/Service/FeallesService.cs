@@ -46,7 +46,7 @@ namespace WebApi.Service
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.FeallesAPIBase + "/api/feallesbase/"+ Fornavne
+                Url = SD.FeallesAPIBase + "/api/feallesbase/search/"+ Fornavne
             });
         }
 

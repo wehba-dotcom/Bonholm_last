@@ -1,6 +1,9 @@
 ﻿@model IEnumerable<WebApi.SharedModels.Feallesbase>
 <div class="container p-3">
-       @if (Model.Count() > 0)
+    <div class="col-4 text-">
+        <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+    </div>
+    @if (Model.Count() > 0)
     {
         <table class="table table-bordered table-striped" style="width = 100%">
             <thead>
@@ -58,13 +61,25 @@
                         <td width="5%">@item.Statstidende</td>
                         <td width="5%">@item.Partnerlink</td>
 
+                        <td>
+                            <div class=" btn-group" role="group">
+
+                                <a asp-controller="Feallesbase" asp-action="FeallesEdit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <a asp-controller="Feallesbase" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
+                            </div>
+                        </td>
 
                     </tr>
                 }
 
             </tbody>
         </table>
-     } 
+    }
+      
     else
     {
         <p> Item Not Exist </p>
