@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WebApi.SharedModels.Allsand>
+<div class="container p-3">
+    <div class="col-4 text-">
+        <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+    </div>
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width = 100%">
+            <thead>
+                <tr>
+                    <th> ID</th>
+                    <th> Nr </th>
+                    <th>Efternavn</th>
+                    <th> Fornavn </th>
+                    <th> Erhverv</th>
+                    <th>Sted</th>
+                    <th>Borgerskab</th>
+                    <th>Klasse</th>
+                    <th>Tingsbogshenvisning</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="5%">@item.ID</td>
+                        <td width="5%">@item.Nr</td>
+                        <td width="5%">@item.Efternavn</td>
+                        <td width="5%">@item.Fornavn</td>
+                        <td width="5%">@item.Erhverv</td>
+                        <td width="5%">@item.Sted</td>
+                        <td width="5%">@item.Borgerskab</td>
+                        <td width="5%">@item.Klasse</td>
+                        <td width="5%">@item.Tingsbogshenvisning</td>
+
+                        <td>
+                            <div class=" btn-group" role="group">
+
+                                <a asp-controller="Allsand" asp-action="AllsandEdit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <a asp-controller="Allsand" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+
+    else
+    {
+        <p> Item Not Exist </p>
+    }
+
+</div>
+
+
+
+
+
+

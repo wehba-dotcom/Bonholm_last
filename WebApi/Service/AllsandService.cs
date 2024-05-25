@@ -41,12 +41,12 @@ namespace WebApi.Service
             });
         }
 
-        public async Task<ResponseDto?> GetAllsandAsync(string allsandName)
+        public async Task<ResponseDto?> GetAllsandAsync(string Fornavn)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.AllsandAPIBase + "/api/allsand/GetByCode/" + allsandName
+                Url = SD.AllsandAPIBase + "/api/allsand/search/" + Fornavn
             });
         }
 

@@ -41,12 +41,46 @@ namespace AllsandApi.Controllers
             return _response;
 
         }
-        [HttpGet("{id}")]
-        public ResponseDto GetAllsand(int id)
+
+
+        [HttpGet("search/{Fornavn}")]
+
+        public ResponseDto Search(string? Fornavn)
+        {
+            var objList = from b in _db.Allsand select b;
+
+            try
+            {
+                if (!String.IsNullOrEmpty(Fornavn))
+                {
+                    objList = objList.Where(b => b.Fornavn == Fornavn);
+                    _response.Result = objList;
+                }
+                else if (String.IsNullOrEmpty(Fornavn))
+                {
+                    _response.Message = _response?.Message ?? "An unknown error occurred.";
+                }
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
+
+
+
+
+
+
+
+        [HttpGet("{ID:int}")]
+        public ResponseDto GetAllsand(int ID)
         {
             try
             {
-                Allsand obj = _db.Allsand.First(u => u.ID == id);
+                Allsand obj = _db.Allsand.First(u => u.ID == ID);
                 _response.Result = obj;
             }
             catch (Exception ex)

@@ -6,7 +6,7 @@ namespace WebApi.Service.IService
 {
     public interface IAllsand
     {
-        Task<ResponseDto?> GetAllsandAsync(string allsandName);
+        Task<ResponseDto?> GetAllsandAsync(string Fornavn);
         Task<ResponseDto?> GetAllAsandssAsync();
         Task<ResponseDto?> GetAllsandByIdAsync(int id);
         Task<ResponseDto?> CreateAllsandAsync(Allsand allsand);

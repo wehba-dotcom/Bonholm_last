@@ -29,20 +29,21 @@
 </div>
 
 <hr />
-<form asp-controller="AfgangTilgang" asp-action="Index">
+<form asp-controller="Allsand" asp-action="Search">
     <div>
-        Fornavne: <input type="text" name="Fornavne" />
-        DeodsDato: <input type="datetime" name="DoedDato" />
+        Fornavn: <input type="text" name="Fornavn" />
+        
         <input type="submit" value="Søg" />
-        <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+        
     </div>
 </form>
-<form asp-controller="AfgangTilgang" asp-action="Index">
+<br/>
+<form asp-controller="Allsand" asp-action="Getbyid">
     <div>
         ID: <input type="number" name="ID" />
 
         <input type="submit" value="Søg" />
-        <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+ 
     </div>
 </form>
 <hr />
