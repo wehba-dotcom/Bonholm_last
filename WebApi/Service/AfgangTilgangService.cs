@@ -40,12 +40,12 @@ namespace WebApi.Service
             });
         }
 
-        public async Task<ResponseDto?> GetAfgansAsync(string afgangsname)
+        public async Task<ResponseDto?> GetAfgansAsync(string Fornavn)
         {
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.AfgangTilgangAPIBase + "/api/afgangtilgang/GetByCode/" + afgangsname
+                Url = SD.AfgangTilgangAPIBase + "/api/afgangtilgang/search/" + Fornavn
             });
         }
 

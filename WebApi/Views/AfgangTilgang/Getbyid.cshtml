@@ -1,0 +1,85 @@
+﻿@model IEnumerable<WebApi.SharedModels.AfgangTilgang>
+<div class="container p-3">
+    <div class="col-4 text-">
+        <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+    </div>
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width = 100%">
+            <thead>
+                <tr>
+                    <th> ID</th>
+                    <th> Sogn </th>
+                    <th>SogneNo</th>
+                    <th> Billedfil </th>
+                    <th> Folieside</th>
+                    <th>Liste</th>
+                    <th>Aar</th>
+                    <th>No</th>
+                    <th>Familieno</th>
+                    <th>Fornavn</th>
+                    <th> Efternavn </th>
+                    <th>Slægtsnavn </th>
+                    <th>Alder </th>
+                    <th> Fødeaar </th>
+                    <th> Haandtering</th>
+                    <th>Hvorhenrejst</th>
+                    <th>Hvorfraankommet </th>
+                    <th>HvoriJeavnfReg </th>
+                    <th>Anmærkning </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="5%">@item.ID</td>
+                        <td width="5%">@item.Sogn</td>
+                        <td width="5%">@item.SogneNo</td>
+                        <td width="5%">@item.Billedfil</td>
+                        <td width="5%">@item.Folieside</td>
+                        <td width="5%">@item.Liste</td>
+                        <td width="5%">@item.Aar</td>
+                        <td width="5%">@item.No</td>
+                        <td width="5%">@item.Familieno</td>
+                        <td width="5%">@item.Fornavn</td>
+                        <td width="5%">@item.Efternavn</td>
+                        <td width="5%">@item.Slægtsnavn</td>
+                        <td width="5%">@item.Alder</td>
+                        <td width="5%">@item.Fødeaar</td>
+                        <td width="5%">@item.Haandtering</td>
+                        <td width="5%">@item.Hvorhenrejst</td>
+                        <td width="5%">@item.Hvorfraankommet</td>
+                        <td width="5%">@item.HvoriJeavnfReg</td>
+                        <td width="5%">@item.Anmærkning</td>
+
+                        <td>
+                            <div class=" btn-group" role="group">
+
+                                <a asp-controller="AfgangTilgang" asp-action="AfgangsEdit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <a asp-controller="Feallesbase" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+
+    else
+    {
+        <p> Item Not Exist </p>
+    }
+
+</div>
+
+
+
+
+

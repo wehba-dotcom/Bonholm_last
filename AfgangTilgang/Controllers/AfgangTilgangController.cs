@@ -9,7 +9,7 @@ namespace AfgangTilgangApi.Controllers
 
     [Route("api/afgangtilgang")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class AfgangTilgangController : ControllerBase
     {
 
@@ -46,12 +46,14 @@ namespace AfgangTilgangApi.Controllers
 
 
         // GET: api/AfgangTilgang/5
-        [HttpGet("{id}")]
-        public ResponseDto GetAfgangTilgang(int id)
+        [HttpGet("{ID:int}")]
+        public ResponseDto GetAfgangTilgang(int ID)
         {
+
+           
             try
             {
-                AfgangTilgang obj = _db.AfgangTilgang.First(u => u.ID == id);
+                AfgangTilgang obj = _db.AfgangTilgang.First(u => u.ID == ID);
                 _response.Result = _mapper.Map<AfgangTilgang>(obj);
             }
             catch (Exception ex)
@@ -61,6 +63,36 @@ namespace AfgangTilgangApi.Controllers
             }
             return _response;
         }
+
+
+
+        //Get :api/afgangtilgang/search/{Fornavn}
+        [HttpGet("search/{Fornavn}")]
+        public ResponseDto Search(string? Fornavn)
+        {
+            var objlist = from b in _db.AfgangTilgang select b;
+            try
+            {
+                if(!String.IsNullOrEmpty(Fornavn))
+                {
+                    objlist = objlist.Where(b => b.Fornavn == Fornavn);
+                    _response.Result = objlist;
+                }
+                else
+                {
+                    _response.Message = "No search criteria provided.";
+                    _response.IsSuccess = false;
+                }
+               
+            }catch(Exception ex)
+            {
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
+
+
+
 
 
 

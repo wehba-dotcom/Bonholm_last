@@ -30,8 +30,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZnYW5nVGlsZ2FuZ1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/AfgangTilgang/Getbyid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZnYW5nVGlsZ2FuZ1xHZXRieWlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/AfgangTilgang/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZnYW5nVGlsZ2FuZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/AfgangTilgang/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWZnYW5nVGlsZ2FuZ1xTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Allsand/AllsandEdit.cshtml]

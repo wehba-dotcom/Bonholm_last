@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using WebApi.SharedModels;
 using WebApi.Service.IService;
 using WebApi.Models;
+using WebApi.Service;
 
 
 namespace WebApi.Controllers
@@ -52,6 +53,64 @@ namespace WebApi.Controllers
             return View(data);
         }
 
+
+        public async Task<IActionResult> Search(string? Fornavn)
+        {
+            List<AfgangTilgang>? list = new List<AfgangTilgang>();
+
+            try
+            {
+                ResponseDto? response = await _afgangTilgangService.GetAfgansAsync(Fornavn);
+
+                if (response != null && response.IsSuccess)
+                {
+                    list = JsonConvert.DeserializeObject<List<AfgangTilgang>>(Convert.ToString(response.Result)) ?? new List<AfgangTilgang>();
+                }
+                else
+                {
+                    TempData["error"] = response?.Message ?? "An unknown error occurred.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (you might want to use a logging framework for this)
+                TempData["error"] = $"An error occurred while searching: {ex.Message}";
+            }
+
+            return View(list);
+        }
+
+
+
+        public async Task<IActionResult> Getbyid(int ID)
+        {
+            List<AfgangTilgang> list = new List<AfgangTilgang>();
+
+            try
+            {
+                ResponseDto? response = await _afgangTilgangService.GetAfgangsByIdAsync(ID);
+
+                if (response != null && response.IsSuccess)
+                {
+                    var afgangtilgang = JsonConvert.DeserializeObject<AfgangTilgang>(Convert.ToString(response.Result));
+                    if (afgangtilgang != null)
+                    {
+                        list.Add(afgangtilgang);
+                    }
+                }
+                else
+                {
+                    TempData["error"] = response?.Message ?? "An unknown error occurred.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (you might want to use a logging framework for this)
+                TempData["error"] = $"An error occurred while searching: {ex.Message}";
+            }
+
+            return View(list);
+        }
 
         public async Task<IActionResult> Create()
         {
