@@ -20,7 +20,7 @@
     </div>
 
     <div class="row pt-4">
-        <div class="col-4 text-right">
+    <div class="col-4 text-right custom-spacing">
         <a asp-controller="AfgangTilgang" asp-action="Create" class="btn btn-primary w-50"><i class="bi bi-plus-circle-fill"></i>  Tilføj Ny</a>
         </div>
         <div class="col-4 text-">
@@ -29,23 +29,26 @@
     </div>
 
     <hr/>
-<form asp-controller="AfgangTilgang" asp-action="Search">
-    <div>
-        Fornavn: <input type="text" name="Fornavn" />
+<div class="form-container">
+    <form asp-controller="AfgangTilgang" asp-action="Search">
+        <div>
+            Fornavn: <input type="text" name="Fornavn" />
         
-        <input type="submit" value="Søg" />
+            <input type="submit" value="Søg" />
        
-    </div>
-  </form>
-<br />
-<form asp-controller="AfgangTilgang" asp-action="Getbyid">
-    <div>
-        ID: <input type="number" name="ID" />
+        </div>
+      </form>
+    <br />
+
+    <form asp-controller="AfgangTilgang" asp-action="Getbyid">
+        <div>
+            ID: <input type="number" name="ID" />
        
-        <input type="submit" value="Søg" />
+            <input type="submit" value="Søg" />
         
-    </div>
-</form>
+        </div>
+    </form>
+</div>
     <hr />
     <br />
 
@@ -188,10 +191,23 @@
      }
  <br/>
 
-  
- 
- 
- 
+
+
+
+<style>
+    .custom-spacing {
+        margin-right: 350px; /* Adjust as needed */
+    }
+    .form-container {
+        display: flex;
+        gap: 200px; /* Add some space between the forms */
+    }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+</style>
 
 
 
