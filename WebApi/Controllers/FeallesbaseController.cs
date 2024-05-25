@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using WebApi.SharedModels;
 using WebApi.Service.IService;
 using WebApi.Models;
+using System.Reflection;
 
 
 namespace WebApi.Controllers
@@ -35,7 +36,7 @@ namespace WebApi.Controllers
                 TempData["error"] = response?.Message;
             }
 
-          
+
             const int pageSize = 10;
             if (pg < 1)
             {
@@ -86,7 +87,7 @@ namespace WebApi.Controllers
         {
             return View();
         }
-      
+
         [HttpPost]
         public async Task<IActionResult> Create(Feallesbase model)
         {
@@ -106,6 +107,40 @@ namespace WebApi.Controllers
             }
             return View(model);
         }
+
+
+
+        public async Task<IActionResult> Getbyid(int ID)
+        {
+            List<Feallesbase> list = new List<Feallesbase>();
+
+            try
+            {
+                ResponseDto? response = await _feallesService.GetFeallesByIdAsync(ID);
+
+                if (response != null && response.IsSuccess)
+                {
+                    var feallesbase = JsonConvert.DeserializeObject<Feallesbase>(Convert.ToString(response.Result));
+                    if (feallesbase != null)
+                    {
+                        list.Add(feallesbase);
+                    }
+                }
+                else
+                {
+                    TempData["error"] = response?.Message ?? "An unknown error occurred.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (you might want to use a logging framework for this)
+                TempData["error"] = $"An error occurred while searching: {ex.Message}";
+            }
+
+            return View(list);
+        }
+
+
 
 
         public async Task<IActionResult> FeallesEdit(int ID)
