@@ -7,7 +7,7 @@ namespace Dato1822Api.Controllers
 {
     [Route("api/dato")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class DatoController : ControllerBase
     {
         private readonly AppDbContext _db;
@@ -40,12 +40,42 @@ namespace Dato1822Api.Controllers
             return _response;
 
         }
-        [HttpGet("{id}")]
-        public ResponseDto GetDato(int id)
+
+        [HttpGet("search/{Fornavn}")]
+
+        public ResponseDto Search(string? Fornavn)
+        {
+            var objList = from b in _db.Dato1822 select b;
+
+            try
+            {
+                if (!String.IsNullOrEmpty(Fornavn))
+                {
+                    objList = objList.Where(b => b.Fornavn == Fornavn);
+                    _response.Result = objList;
+                }
+                else if (String.IsNullOrEmpty(Fornavn))
+                {
+                    _response.Message = _response?.Message ?? "An unknown error occurred.";
+                }
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
+
+
+
+
+        [HttpGet("{ID:int}")]
+        public ResponseDto GetDato(int ID)
         {
             try
             {
-                Dato1822 obj = _db.Dato1822.First(u => u.ID == id);
+                Dato1822 obj = _db.Dato1822.First(u => u.ID == ID);
                 _response.Result = obj;
             }
             catch (Exception ex)

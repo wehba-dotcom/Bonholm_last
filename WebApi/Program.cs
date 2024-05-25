@@ -11,12 +11,14 @@ builder.Services.AddHttpClient<IAuthService, AuthService>();
 builder.Services.AddHttpClient<IFeallesService, FeallesService>();
 builder.Services.AddHttpClient<IAfgangTilgangService, AfgangTilgangService>();
 builder.Services.AddHttpClient<IAllsand, AllsandService>();
+builder.Services.AddHttpClient<IDato1822, DatoService>();
 
 
 SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
 SD.FeallesAPIBase = builder.Configuration["ServiceUrls:Feallesbase"];
 SD.AfgangTilgangAPIBase = builder.Configuration["ServiceUrls:AfgangTilgang"];
 SD.AllsandAPIBase = builder.Configuration["ServiceUrls:Allsand"];
+SD.DatoAPIBase = builder.Configuration["ServiceUrls:Dato"];
 
 
 
@@ -26,6 +28,7 @@ builder.Services.AddScoped<IFeallesService, FeallesService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAfgangTilgangService, AfgangTilgangService>();
 builder.Services.AddScoped<IAllsand, AllsandService>();
+builder.Services.AddScoped<IDato1822, DatoService>();
 
 
 
