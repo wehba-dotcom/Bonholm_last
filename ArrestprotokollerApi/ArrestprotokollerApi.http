@@ -1,0 +1,6 @@
+@ArrestprotokollerApi_HostAddress = http://localhost:5175
+
+GET {{ArrestprotokollerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
