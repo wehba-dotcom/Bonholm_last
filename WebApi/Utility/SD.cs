@@ -10,6 +10,7 @@
         public static string GateWayIBase {  get; set; }
 
         public static string DatoAPIBase { get; set; }
+        public static string ArrestAPIBase { get; set; }
 
         public const string RoleAdmin = "ADMIN";
         public const string RoleCustomer = "CUSTOMER";
