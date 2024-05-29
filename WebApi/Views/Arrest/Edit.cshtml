@@ -1,0 +1,321 @@
+﻿ @model WebApi.SharedModels.Arrestprotokoller
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-black-50 pl-3">Redigere</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <input asp-for="ID" hidden />
+            <div class="border p-3">
+                <div class="col">
+                    <div class="row-12">
+                        <div class="form-group col">
+                           
+                            <div class="mp-3">
+                                <label asp-for="ProtokolSideFolie" class="form-label"></label>
+                                <input asp-for="ProtokolSideFolie" class="form-control" />
+                                <span asp-validation-for="ProtokolSideFolie" class="text-danger"></span>
+                            </div>
+
+
+
+                            <div class="mp-3">
+                                <label asp-for="Protokolid" class="form-label"></label>
+                                <input asp-for="Protokolid" class="form-control" />
+                                <span asp-validation-for="Protokolid" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="ProtokolFotoside1" class="form-label"></label>
+                                <input asp-for="ProtokolFotoside1" class="form-control" />
+                                <span asp-validation-for="ProtokolFotoside1" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="ProtokolFotoside2" class="form-label"></label>
+                                <input asp-for="ProtokolFotoside2" class="form-control" />
+                                <span asp-validation-for="ProtokolFotoside2" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="FangeLbnr" class="form-label"></label>
+                                <input asp-for="FangeLbnr" class="form-control" />
+                                <span asp-validation-for="FangeLbnr" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="VisitaionArbejdsProtokolNr" class="form-label"></label>
+                                <input asp-for="VisitaionArbejdsProtokolNr" class="form-control" />
+                                <span asp-validation-for="VisitaionArbejdsProtokolNr" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fornavn" class="form-label"></label>
+                                <input asp-for="Fornavn" class="form-control" />
+                                <span asp-validation-for="Fornavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Efternavn" class="form-label"></label>
+                                <input asp-for="Efternavn" class="form-control" />
+                                <span asp-validation-for="Efternavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Slægtsnavn" class="form-label"></label>
+                                <input asp-for="Slægtsnavn" class="form-control" />
+                                <span asp-validation-for="Slægtsnavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Stilling" class="form-label"></label>
+                                <input asp-for="Stilling" class="form-control" />
+                                <span asp-validation-for="Stilling" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Alder" class="form-label"></label>
+                                <input asp-for="Alder" class="form-control" />
+                                <span asp-validation-for="Alder" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fødested" class="form-label"></label>
+                                <input asp-for="Fødested" class="form-control" />
+                                <span asp-validation-for="Fødested" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fødedato" class="form-label"></label>
+                                <input asp-for="Fødedato" class="form-control" />
+                                <span asp-validation-for="Fødedato" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Signalement" class="form-label"></label>
+                                <input asp-for="Signalement" class="form-control" />
+                                <span asp-validation-for="Signalement" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="ProtokolDato" class="form-label"></label>
+                                <input asp-for="ProtokolDato" class="form-control" />
+                                <span asp-validation-for="ProtokolDato" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="UnderHvisJustits" class="form-label"></label>
+                                <input asp-for="UnderHvisJustits" class="form-control" />
+                                <span asp-validation-for="UnderHvisJustits" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Årsag" class="form-label"></label>
+                                <input asp-for="Årsag" class="form-control" />
+                                <span asp-validation-for="Årsag" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="SagensUdfald" class="form-label"></label>
+                                <input asp-for="SagensUdfald" class="form-control" />
+                                <span asp-validation-for="SagensUdfald" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Domsdato" class="form-label"></label>
+                                <input asp-for="Domsdato" class="form-control" />
+                                <span asp-validation-for="Domsdato" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Anmærkninger" class="form-label"></label>
+                                <input asp-for="Anmærkninger" class="form-control" />
+                                <span asp-validation-for="Anmærkninger" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Bemærkninger" class="form-label"></label>
+                                <input asp-for="Bemærkninger" class="form-control" />
+                                <span asp-validation-for="Bemærkninger" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="HenvisningsfolieProtolkol" class="form-label"></label>
+                                <input asp-for="HenvisningsfolieProtolkol" class="form-control" />
+                                <span asp-validation-for="HenvisningsfolieProtolkol" class="text-danger"></span>
+                            </div>
+
+
+                        </div>
+                        </br>
+                        <div class="form-group row">
+                            <div class="col-8 offset-2 row">
+                                <div class="col">
+                                    <input type="submit" value="Update" class="btn btn-primary w-75" />
+                                </div>
+                                <div class="col">
+                                    <a asp-action="Index" class="btn btn-primary w-75">TilBage</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+@*
+
+@{
+    ViewBag.Title = "Update Feallesbase";
+}
+
+<h2>Update Feallesbase</h2>
+
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["success"]
+    </div>
+}
+
+@if (ViewBag.Alert != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Alert
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AvisTypeID)
+        @Html.EditorFor(model => model.AvisTypeID)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Avisdato)
+        @Html.EditorFor(model => model.Avisdato, new { @class = "form-control datepicker" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Efternavn)
+        @Html.EditorFor(model => model.Efternavn)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Fornavne)
+        @Html.EditorFor(model => model.Fornavne, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Foedt)
+        @Html.EditorFor(model => model.Foedt, new { @class = "form-control datepicker" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Alder)
+        @Html.EditorFor(model => model.Alder)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Doebenavn)
+        @Html.EditorFor(model => model.Doebenavn)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Erhverv)
+        @Html.EditorFor(model => model.Erhverv)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Adresser)
+        @Html.EditorFor(model => model.Adresser)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SognID)
+        @Html.EditorFor(model => model.SognID)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TidlBopael)
+        @Html.EditorFor(model => model.TidlBopael)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Doedsdato)
+        @Html.EditorFor(model => model.Doedsdato)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Begravelsesdato)
+        @Html.EditorFor(model => model.Begravelsesdato)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Begravelsessted)
+        @Html.EditorFor(model => model.Begravelsessted)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Efterladte)
+        @Html.EditorFor(model => model.Efterladte)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.FlereDoedsannoncer)
+        @Html.EditorFor(model => model.FlereDoedsannoncer)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AndreDataFraAnnoncen)
+        @Html.EditorFor(model => model.AndreDataFraAnnoncen)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Oegenavne)
+        @Html.EditorFor(model => model.Oegenavne)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Nekrolog)
+        @Html.EditorFor(model => model.Nekrolog)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Mindeord)
+        @Html.EditorFor(model => model.Mindeord)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Statstidende)
+        @Html.EditorFor(model => model.Statstidende)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Partnerlink)
+        @Html.EditorFor(model => model.Partnerlink)
+    </div>
+
+
+    <!-- Add similar sections for other properties -->
+
+    <button type="submit" class="btn btn-primary">Update</button>
+}
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd',
+                autoclose: true
+            });
+        });
+    </script>
+}
+
+
+
+
+ *@
+
