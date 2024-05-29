@@ -11,6 +11,7 @@
 
         public static string DatoAPIBase { get; set; }
         public static string ArrestAPIBase { get; set; }
+        public static string BegravAPIBase { get; set; }
 
         public const string RoleAdmin = "ADMIN";
         public const string RoleCustomer = "CUSTOMER";
