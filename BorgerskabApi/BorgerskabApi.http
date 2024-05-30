@@ -1,0 +1,6 @@
+@BorgerskabApi_HostAddress = http://localhost:5032
+
+GET {{BorgerskabApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

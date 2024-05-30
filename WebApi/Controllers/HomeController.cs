@@ -22,6 +22,10 @@ namespace WebApi.Controllers
         {
             return View();
         }
+        public IActionResult GateGory()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
