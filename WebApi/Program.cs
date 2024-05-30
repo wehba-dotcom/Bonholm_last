@@ -14,6 +14,7 @@ builder.Services.AddHttpClient<IAllsand, AllsandService>();
 builder.Services.AddHttpClient<IDato1822, DatoService>();
 builder.Services.AddHttpClient<IArrestprotokol, ArrestprotokolService>();
 builder.Services.AddHttpClient<IBegrav, BegravService>();
+builder.Services.AddHttpClient<IBorger, BorgerService>();
 
 
 SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
@@ -23,6 +24,8 @@ SD.AllsandAPIBase = builder.Configuration["ServiceUrls:Allsand"];
 SD.DatoAPIBase = builder.Configuration["ServiceUrls:Dato"];
 SD.ArrestAPIBase = builder.Configuration["ServiceUrls:arrestprotokoller"];
 SD.BegravAPIBase = builder.Configuration["ServiceUrls:Begrav"];
+SD.BorgerAPIBase = builder.Configuration["ServiceUrls:Borger"];
+
 
 
 
@@ -35,6 +38,7 @@ builder.Services.AddScoped<IAllsand, AllsandService>();
 builder.Services.AddScoped<IDato1822, DatoService>();
 builder.Services.AddScoped<IArrestprotokol, ArrestprotokolService>();
 builder.Services.AddScoped<IBegrav, BegravService>();
+builder.Services.AddScoped<IBorger, BorgerService>();
 
 
 

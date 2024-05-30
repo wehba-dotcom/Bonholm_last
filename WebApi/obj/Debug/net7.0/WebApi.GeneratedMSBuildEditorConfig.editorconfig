@@ -126,6 +126,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVncmF2XFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Borger/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZ2VyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Borger/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZ2VyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Borger/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZ2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Borger/Getbyid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZ2VyXEdldGJ5aWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Borger/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Borger/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9yZ2VyXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/WEHBA/OneDrive/Skrivebord/Bornholm_last/Bornholm-Local-History/WebApi/Views/Dato/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0b1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

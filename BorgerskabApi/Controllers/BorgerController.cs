@@ -7,7 +7,7 @@ namespace BorgerskabApi.Controllers
 {
     [Route("api/borger")]
     [ApiController]
-   // [Authorize]
+    [Authorize]
     public class BorgerController : Controller
     {
         private readonly AppDbContext _db;
