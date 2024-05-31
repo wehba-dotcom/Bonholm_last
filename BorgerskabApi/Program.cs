@@ -1,4 +1,4 @@
-using BorgerApi.Data;
+using BorgerskabApi.Data;
 using BorgerskabApi.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;

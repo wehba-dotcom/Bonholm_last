@@ -1,4 +1,4 @@
-﻿using BorgerApi.Data;
+﻿using BorgerskabApi.Data;
 using BorgerApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

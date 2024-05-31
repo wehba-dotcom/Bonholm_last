@@ -1,0 +1,6 @@
+@BørnRøApi_HostAddress = http://localhost:5254
+
+GET {{BørnRøApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

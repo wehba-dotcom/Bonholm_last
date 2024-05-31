@@ -1,0 +1,80 @@
+﻿@model WebApi.SharedModels.Børn
+
+<div class="card shadow border-0 mt-4">
+    <div class=" card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+
+                <h2 class="text-blabk-50 pl-3">TilFøjet Ny </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="card-body p-4">
+        <form method="post" action="Create">
+            <div class=" border p-3">
+                <div class="form-group row text-center "></div>
+                <div class="col">
+                    <div class="row-12">
+                        <div class="form-group col">
+                            <div asp-validation-summary="All"></div>
+                            <div class="mp-3">
+                                <label asp-for="LbNr" class="form-label"></label>
+                                <input asp-for="LbNr" class="form-control" />
+                                <span asp-validation-for="LbNr" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fornavn" class="form-label"></label>
+                                <input asp-for="Fornavn" class="form-control" />
+                                <span asp-validation-for="Fornavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Efternavn" class="form-label"></label>
+                                <input asp-for="Efternavn" class="form-control" />
+                                <span asp-validation-for="Efternavn" class="text-danger"></span>
+                            </div>
+                           
+                          
+                            <div class="mp-3">
+                                <label asp-for="Titel" class="form-label"></label>
+                                <input asp-for="Titel" class="form-control" />
+                                <span asp-validation-for="Titel" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="AntalBørn" class="form-label"></label>
+                                <input asp-for="AntalBørn" class="form-control" />
+                                <span asp-validation-for="AntalBørn" class="text-danger"></span>
+                            </div>
+                           
+                            <div class="mp-3">
+                                <label asp-for="Div" class="form-label"></label>
+                                <input asp-for="Div" class="form-control" />
+                                <span asp-validation-for="Div" class="text-danger"></span>
+                            </div>
+                           
+
+
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+
+                                <input type="submit" class="btn btn-primary w-75" value="Tilføj" />
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a asp-action="Index" class="btn btn-primary w-75">Tilbage</a>
+                            </div>
+
+                        </div>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

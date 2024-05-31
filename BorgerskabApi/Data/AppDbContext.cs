@@ -3,7 +3,7 @@
 using BorgerApi.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace BorgerApi.Data
+namespace BorgerskabApi.Data
 {
     public class AppDbContext : DbContext
     {
