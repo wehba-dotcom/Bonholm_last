@@ -14,6 +14,7 @@
         public static string BegravAPIBase { get; set; }
         public static string BorgerAPIBase { get; set; }
         public static string BornAPIBase { get; set; }
+        public static string ChristianAPIBase { get; set; }
 
         public const string RoleAdmin = "ADMIN";
         public const string RoleCustomer = "CUSTOMER";

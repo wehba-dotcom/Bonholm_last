@@ -1,0 +1,225 @@
+﻿@model WebApi.SharedModels.Christiansø
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-black-50 pl-3 ">Slet Side</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+
+        <form asp-action="Delete">
+            <input asp-for="ID" hidden />
+            <div class="border p-3">
+                <div class="col">
+                    <div class="row-12">
+                        <div class="form-group col">
+                            <div class="mp-3">
+                                <label asp-for="KildeBog" class="form-label"></label>
+                                <input asp-for="KildeBog" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Side" class="form-label"></label>
+                                <input asp-for="Side" disabled class="form-control" />
+                               
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="AnkomstAfrejse" class="form-label"></label>
+                                <input asp-for="AnkomstAfrejse" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Kompani" class="form-label"></label>
+                                <input asp-for="Kompani" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Aar" class="form-label"></label>
+                                <input asp-for="Aar" disabled class="form-control" />
+
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Nr" class="form-label"></label>
+                                <input asp-for="Nr" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Titel" class="form-label"></label>
+                                <input asp-for="Titel" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fornavn" class="form-label"></label>
+                                <input asp-for="Fornavn" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Efternavn" class="form-label"></label>
+                                <input asp-for="Efternavn" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Slægtsnavn" class="form-label"></label>
+                                <input asp-for="Slægtsnavn"disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fødested" class="form-label"></label>
+                                <input asp-for="Fødested" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="FødtDato" class="form-label"></label>
+                                <input asp-for="FødtDato" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="FødtÅr" class="form-label"></label>
+                                <input asp-for="FødtÅr" disabled class="form-control" />
+
+                            </div>
+                           <div class="mp-3">
+                               <label asp-for="Alder" class="form-label"></label>
+                               <input asp-for="Alder" disabled class="form-control" />
+                           </div>
+                           <div class="mp-3">
+                               <label asp-for="KomFra" class="form-label"></label>
+                               <input asp-for="KomFra" disabled class="form-control" />
+                           </div>
+                            <div class="mp-3">
+                                <label asp-for="Distrikt" class="form-label"></label>
+                                <input asp-for="Distrikt" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Amt" class="form-label"></label>
+                                <input asp-for="Amt" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="By" class="form-label"></label>
+                                <input asp-for="By" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="LægdNr" class="form-label"></label>
+                                <input asp-for="LægdNr" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="PatentNr" class="form-label"></label>
+                                <input asp-for="PatentNr" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="LøbeNr" class="form-label"></label>
+                                <input asp-for="LøbeNr" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="ExtraTjPåØen" class="form-label"></label>
+                                <input asp-for="ExtraTjPåØen" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="TjenesteFra1852" class="form-label"></label>
+                                <input asp-for="TjenesteFra1852" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="TjenesteTid" class="form-label"></label>
+                                <input asp-for="TjenesteTid" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Premierløjtnant" class="form-label"></label>
+                                <input asp-for="Premierløjtnant" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="SøLøjtnantSøOfficer" class="form-label"></label>
+                                <input asp-for="SøLøjtnantSøOfficer" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Tømmermand" class="form-label"></label>
+                                <input asp-for="Tømmermand" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Lodsmatros" class="form-label"></label>
+                                <input asp-for="Lodsmatros" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="LodsQvartersmester" class="form-label"></label>
+                                <input asp-for="LodsQvartersmester" disavled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Soldat" class="form-label"></label>
+                                <input asp-for="Soldat" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Konstabel" class="form-label"></label>
+                                <input asp-for="Konstabel" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="UnderKanoner" class="form-label"></label>
+                                <input asp-for="UnderKanoner" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Arbejdsmand" class="form-label"></label>
+                                <input asp-for="Arbejdsmand" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Gift" class="form-label"></label>
+                                <input asp-for="Gift" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Børn" class="form-label"></label>
+                                <input asp-for="Børn" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Anmærkning" class="form-label"></label>
+                                <input asp-for="Anmærkning" disabled class="form-control" />
+                                
+                            </div>
+
+
+
+
+
+
+
+                            <br />
+                            <div class="form-group row">
+                                <div class="col-8 offset-2 row">
+                                    <div class="col">
+                                        <input type="submit" class="btn btn-primary w-75" value="Slet" />
+                                    </div>
+                                    <div class="col">
+                                        <a asp-action="Index" class="btn btn-primary w-75">TilBage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+
+

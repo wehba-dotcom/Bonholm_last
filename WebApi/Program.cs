@@ -16,6 +16,7 @@ builder.Services.AddHttpClient<IArrestprotokol, ArrestprotokolService>();
 builder.Services.AddHttpClient<IBegrav, BegravService>();
 builder.Services.AddHttpClient<IBorger, BorgerService>();
 builder.Services.AddHttpClient<IBørn, BørnService>();
+builder.Services.AddHttpClient<IChristian, ChristianService>();
 
 
 SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
@@ -27,6 +28,7 @@ SD.ArrestAPIBase = builder.Configuration["ServiceUrls:arrestprotokoller"];
 SD.BegravAPIBase = builder.Configuration["ServiceUrls:Begrav"];
 SD.BorgerAPIBase = builder.Configuration["ServiceUrls:Borger"];
 SD.BornAPIBase = builder.Configuration["ServiceUrls:Born"];
+SD.ChristianAPIBase = builder.Configuration["ServiceUrls:Christian"];
 
 
 
@@ -42,6 +44,7 @@ builder.Services.AddScoped<IArrestprotokol, ArrestprotokolService>();
 builder.Services.AddScoped<IBegrav, BegravService>();
 builder.Services.AddScoped<IBorger, BorgerService>();
 builder.Services.AddScoped<IBørn, BørnService>();
+builder.Services.AddScoped<IChristian, ChristianService>();
 
 
 
