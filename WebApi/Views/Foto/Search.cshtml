@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebApi.SharedModels.Foto>
+<div class="container p-3">
+    <div class="col-4 text-">
+        <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
+    </div>
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width = 100%">
+            <thead>
+               <tr>
+                    <th> ID</th>
+                    <th> Fornavn</th>
+                    <th> Efternavn </th>
+                    <th>Stilling</th>
+                    <th>Adr</th>
+                    <th>Sogn</th>
+                    <th>Dato </th>
+                    <th>Gange</th>
+                    <th>Billedetype </th>
+                    <th>BilledeNr</th>
+                    <th>Fotoår </th>
+                    <th>Fotograf</th>
+                    <th>FotografsNr </th>
+                    <th>CdNr</th>
+                    <th>Noter </th>
+                    <th>Bemærkning</th>
+                    <th>Billede </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="5%">@item.ID</td>
+                        <td width="5%">@item.Fornavn</td>
+                        <td width="5%">@item.Efternavn</td>
+                        <td width="5%">@item.Stilling</td>
+                        <td width="5%">@item.Adr</td>
+                        <td width="5%">@item.Sogn</td>
+                        <td width="5%">@item.Dato</td>
+                        <td width="5%">@item.Gange</td>
+                        <td width="5%">@item.Billedetype</td>
+                        <td width="5%">@item.BilledeNr</td>
+                        <td width="5%">@item.Fotoår</td>
+                        <td width="5%">@item.Fotograf</td>
+                        <td width="5%">@item.FotografsNr</td>
+                        <td width="5%">@item.CdNr</td>
+                        <td width="5%">@item.Noter</td>
+                        <td width="5%">@item.Bemærkning</td>
+                        <td width="5%">@item.Billede</td>
+
+                        <td>
+                            <div class=" btn-group" role="group">
+
+                                <a asp-controller="Foto" asp-action="Edit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <a asp-controller="Foto" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
+                            </div>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+
+    else
+    {
+        <p> Item Not Exist </p>
+    }
+
+</div>
+
+
+
+
+
+

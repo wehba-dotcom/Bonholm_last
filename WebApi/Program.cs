@@ -17,6 +17,8 @@ builder.Services.AddHttpClient<IBegrav, BegravService>();
 builder.Services.AddHttpClient<IBorger, BorgerService>();
 builder.Services.AddHttpClient<IBørn, BørnService>();
 builder.Services.AddHttpClient<IChristian, ChristianService>();
+builder.Services.AddHttpClient<IFoto, FotoService>();
+
 
 
 SD.AuthAPIBase = builder.Configuration["ServiceUrls:AuthAPI"];
@@ -29,6 +31,7 @@ SD.BegravAPIBase = builder.Configuration["ServiceUrls:Begrav"];
 SD.BorgerAPIBase = builder.Configuration["ServiceUrls:Borger"];
 SD.BornAPIBase = builder.Configuration["ServiceUrls:Born"];
 SD.ChristianAPIBase = builder.Configuration["ServiceUrls:Christian"];
+SD.FotoAPIBase = builder.Configuration["ServiceUrls:Foto"];
 
 
 
@@ -45,6 +48,7 @@ builder.Services.AddScoped<IBegrav, BegravService>();
 builder.Services.AddScoped<IBorger, BorgerService>();
 builder.Services.AddScoped<IBørn, BørnService>();
 builder.Services.AddScoped<IChristian, ChristianService>();
+builder.Services.AddScoped<IFoto, FotoService>();
 
 
 

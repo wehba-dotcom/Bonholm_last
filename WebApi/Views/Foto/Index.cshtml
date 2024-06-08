@@ -1,0 +1,227 @@
+﻿@model IEnumerable<WebApi.SharedModels.Foto>
+@{
+    ViewData["Title"] = "Index";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<div class="card-header bg-secondary bg-gradient ml-0 py-3">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="text-black-50 pl-3">Liste Af Elemente</h2>
+        </div>
+    </div>
+</div>
+
+<div class="row pt-4">
+    <div class="col-4 text-right custom-spacing">
+        <a asp-controller="Foto" asp-action="Create" class="btn btn-primary w-50">
+            <i class="bi bi-plus-circle-fill"></i> Tilføj Ny
+        </a>
+    </div>
+    <div class="col-4 text-left ">
+        <a asp-controller="Home" asp-action="GateGory" class="btn btn-primary w-50">
+            <i class="bi bi-backspace"></i> Tilbage
+        </a>
+    </div>
+</div>
+
+
+<hr />
+
+<div class="form-container">
+    <form asp-controller="Foto" asp-action="Search">
+        <div>
+            Fornavn: <input type="text" name="Fornavn" />
+
+            <input type="submit" value="Søg" />
+
+        </div>
+    </form>
+    <br />
+    <form asp-controller="Foto" asp-action="GetById">
+        <div>
+            ID: <input type="number" name="ID" />
+
+            <input type="submit" value="Søg" />
+
+        </div>
+    </form>
+
+</div>
+<hr />
+<br />
+
+@if (pager.TotalPages > 0)
+{
+    <ul class="pagination justify-content-end">
+        @if (pager.CurrentPage > 1)
+        {
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Foto" asp-action="Index" asp-route-pg="1">First</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Foto" asp-action="Index" asp-route-pg="@(pager.CurrentPage-1)">Previouse</a>
+            </li>
+        }
+        @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+        {
+            <li class="page-item @(pge == pager.CurrentPage? "active":"")">
+                <a class="page-link" asp-controller="Foto" asp-action="Index" asp-route-pg="@pge">@pge</a>
+            </li>
+        }
+        @if (pager.CurrentPage < pager.TotalPages)
+        {
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Foto" asp-action="Index" asp-route-pg="@(pager.CurrentPage+1)">Next</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Foto" asp-action="Index" asp-route-pg="@(pager.TotalPages)">Last</a>
+            </li>
+        }
+    </ul>
+}
+
+
+
+@if (Model.Count() > 0)
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th> ID</th>
+                <th> Fornavn</th>
+                <th> Efternavn </th>
+                <th>Stilling</th>
+                <th>Adr</th>
+                <th>Sogn</th>
+                <th>Dato </th>
+                <th>Gange</th>
+                <th>Billedetype </th>
+                <th>BilledeNr</th>
+                <th>Fotoår </th>
+                <th>Fotograf</th>
+                <th>FotografsNr </th>
+                <th>CdNr</th>
+                <th>Noter </th>
+                <th>Bemærkning</th>
+                <th>Billede </th>
+                
+               
+               
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td width="5%">@item.ID</td>
+                     <td width="5%">@item.Fornavn</td>
+                    <td width="5%">@item.Efternavn</td>
+                    <td width="5%">@item.Stilling</td>
+                    <td width="5%">@item.Adr</td>
+                    <td width="5%">@item.Sogn</td>
+                    <td width="5%">@item.Dato</td>
+                    <td width="5%">@item.Gange</td>
+                    <td width="5%">@item.Billedetype</td>
+                    <td width="5%">@item.BilledeNr</td>
+                    <td width="5%">@item.Fotoår</td>
+                    <td width="5%">@item.Fotograf</td>
+                    <td width="5%">@item.FotografsNr</td>
+                    <td width="5%">@item.CdNr</td>
+                    <td width="5%">@item.Noter</td>
+                    <td width="5%">@item.Bemærkning</td>
+                    <td width="5%">@item.Billede</td>
+                   
+
+                   
+                    
+
+                    <td>
+                        <div class=" btn-group" role="group">
+
+                            <a asp-controller="Foto" asp-action="Edit" asp-route-id="@item.ID" class="btn btn-primary  mx-2"><i class="bi bi-pencil-square"></i>Redigere</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <a asp-controller="Foto" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger  mx-1"><i class="bi bi-trash3"></i>Slet</a>
+                        </div>
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Ingen elementer oprettet endnu</p>
+}
+
+
+@if (pager.TotalPages > 0)
+{
+    <ul class="pagination justify-content-end">
+        @if (pager.CurrentPage > 1)
+        {
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Born" asp-action="Index" asp-route-pg="1">First</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Born" asp-action="Index" asp-route-pg="@(pager.CurrentPage-1)">Previouse</a>
+            </li>
+        }
+        @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+        {
+            <li class="page-item @(pge == pager.CurrentPage? "active":"")">
+                <a class="page-link" asp-controller="Born" asp-action="Index" asp-route-pg="@pge">@pge</a>
+            </li>
+        }
+        @if (pager.CurrentPage < pager.TotalPages)
+        {
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Born" asp-action="Index" asp-route-pg="@(pager.CurrentPage+1)">Next</a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" asp-controller="Born" asp-action="Index" asp-route-pg="@(pager.TotalPages)">Last</a>
+            </li>
+        }
+    </ul>
+}
+<br />
+
+
+
+
+
+<style>
+    .custom-spacing {
+        margin-right: 350px; /* Adjust as needed */
+    }
+
+    .form-container {
+        display: flex;
+        gap: 200px; /* Add some space between the forms */
+    }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+</style>
+
+
+
+
+
+
+
