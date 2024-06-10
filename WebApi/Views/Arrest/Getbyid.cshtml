@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApi.SharedModels.Arrestprotokoller>
+﻿@model IEnumerable<WebApi.SharedModels.FT>
 <div class="container p-3">
     <div class="col-4 text-">
         <a asp-action="Index" class="btn btn-primary w-20"><i class="bi bi-backspace"></i>  Tilbage til fuld liste</a>
@@ -9,29 +9,17 @@
             <thead>
                 <tr>
                     <th> ID</th>
-                    <th> ProtokolSideFolie </th>
-                    <th>Protokolid</th>
-                    <th>ProtokolFotoside1</th>
-                    <th>ProtokolFotoside2</th>
-                    <th>FangeLbnr</th>
-                    <th>VisitaionArbejdsProtokolNr</th>
-                    <th> Fornavn</th>
+                    <th> Fornavne</th>
                     <th> Efternavn </th>
-                    <th>Slægtsnavn</th>
-                    <th> Opholdssted </th>
+                    <th>Fødested</th>
+                    <th>Alder</th>
+                    <th>GiftUgift </th>
                     <th>Stilling </th>
-                    <th>Alder </th>
-                    <th> Fødested </th>
-                    <th> Fødedato</th>
-                    <th>Signalement</th>
-                    <th>ProtokolDato </th>
-                    <th>UnderHvisJustits </th>
-                    <th>Årsag </th>
-                    <th> SagensUdfald </th>
-                    <th> Domsdato </th>
-                    <th> Anmærkninger </th>
-                    <th> Bemærkninger </th>
-                    <th>HenvisningsfolieProtolkol</th>
+                    <th>Amt </th>
+                    <th>SognAdresse </th>
+                    <th>Løbenr </th>
+                    <th>IndtastNr </th>
+                    <th>Bemærkninger </th>
                 </tr>
             </thead>
             <tbody>
@@ -39,29 +27,17 @@
                 {
                     <tr>
                         <td width="5%">@item.ID</td>
-                        <td width="5%">@item.ProtokolSideFolie</td>
-                        <td width="5%">@item.Protokolid</td>
-                        <td width="5%">@item.ProtokolFotoside1</td>
-                        <td width="5%">@item.ProtokolFotoside2</td>
-                        <td width="5%">@item.FangeLbnr</td>
-                        <td width="5%">@item.VisitaionArbejdsProtokolNr</td>
-                        <td width="5%">@item.Fornavn</td>
+                        <td width="5%">@item.Fornavne</td>
                         <td width="5%">@item.Efternavn</td>
-                        <td width="5%">@item.Slægtsnavn</td>
-                        <td width="5%">@item.Opholdssted</td>
-                        <td width="5%">@item.Stilling</td>
-                        <td width="5%">@item.Alder</td>
                         <td width="5%">@item.Fødested</td>
-                        <td width="5%">@item.Fødedato</td>
-                        <td width="5%">@item.Signalement</td>
-                        <td width="5%">@item.ProtokolDato</td>
-                        <td width="5%">@item.UnderHvisJustits</td>
-                        <td width="5%">@item.Årsag</td>
-                        <td width="5%">@item.SagensUdfald</td>
-                        <td width="5%">@item.Domsdato</td>
-                        <td width="5%">@item.Anmærkninger</td>
+                        <td width="5%">@item.Alder</td>
+                        <td width="5%">@item.GiftUgift</td>
+                        <td width="5%">@item.Stilling</td>
+                        <td width="5%">@item.Amt</td>
+                        <td width="5%">@item.SognAdresse</td>
+                        <td width="5%">@item.Løbenr</td>
+                        <td width="5%">@item.IndtastNr</td>
                         <td width="5%">@item.Bemærkninger</td>
-                        <td width="5%">@item.HenvisningsfolieProtolkol</td>
 
                         <td>
                             <div class=" btn-group" role="group">

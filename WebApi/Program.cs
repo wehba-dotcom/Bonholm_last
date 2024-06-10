@@ -18,6 +18,7 @@ builder.Services.AddHttpClient<IBorger, BorgerService>();
 builder.Services.AddHttpClient<IBørn, BørnService>();
 builder.Services.AddHttpClient<IChristian, ChristianService>();
 builder.Services.AddHttpClient<IFoto, FotoService>();
+builder.Services.AddHttpClient<IFt, FtService>();
 
 
 
@@ -32,7 +33,7 @@ SD.BorgerAPIBase = builder.Configuration["ServiceUrls:Borger"];
 SD.BornAPIBase = builder.Configuration["ServiceUrls:Born"];
 SD.ChristianAPIBase = builder.Configuration["ServiceUrls:Christian"];
 SD.FotoAPIBase = builder.Configuration["ServiceUrls:Foto"];
-
+SD.FtAPIBase = builder.Configuration["ServiceUrls:Ft"];
 
 
 
@@ -49,7 +50,7 @@ builder.Services.AddScoped<IBorger, BorgerService>();
 builder.Services.AddScoped<IBørn, BørnService>();
 builder.Services.AddScoped<IChristian, ChristianService>();
 builder.Services.AddScoped<IFoto, FotoService>();
-
+builder.Services.AddScoped<IFt, FtService>();
 
 
 

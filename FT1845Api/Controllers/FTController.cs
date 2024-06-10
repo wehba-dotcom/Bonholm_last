@@ -7,7 +7,7 @@ namespace FT1845Api.Controllers
 {
     [Route("api/ft")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class FTController : Controller
     {
         private readonly AppDbContext _db;
@@ -40,7 +40,7 @@ namespace FT1845Api.Controllers
         }
 
 
-        [HttpGet("search/{Fornavn}")]
+        [HttpGet("search/{Fornavne}")]
 
         public ResponseDto Search(string? Fornavne)
         {

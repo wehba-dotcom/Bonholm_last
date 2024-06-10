@@ -1,4 +1,4 @@
-﻿@model WebApi.SharedModels.Arrestprotokoller
+﻿@model WebApi.SharedModels.FT
 
 <div class="card shadow border-0 mt-4">
     <div class="card-header bg-secondary bg-gradient ml-0 py-3">
@@ -17,119 +17,69 @@
                     <div class="row-12">
                         <div class="form-group col">
                             <div class="mp-3">
-                                <label asp-for="ProtokolSideFolie" class="form-label"></label>
-                                <input asp-for="ProtokolSideFolie" disabled class="form-control" />
-                               
-                            </div>
-
-
-
-                            <div class="mp-3">
-                                <label asp-for="Protokolid" class="form-label"></label>
-                                <input asp-for="Protokolid" disabled class="form-control" />
-                               
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="ProtokolFotoside1" class="form-label"></label>
-                                <input asp-for="ProtokolFotoside1" disabled class="form-control" />
-                              
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="ProtokolFotoside2" class="form-label"></label>
-                                <input asp-for="ProtokolFotoside2" disabled class="form-control" />
-                              
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="FangeLbnr" class="form-label"></label>
-                                <input asp-for="FangeLbnr" disabled class="form-control" />
-                              
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="VisitaionArbejdsProtokolNr" class="form-label"></label>
-                                <input asp-for="VisitaionArbejdsProtokolNr" disabled class="form-control" />
-                               
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="Fornavn" class="form-label"></label>
-                                <input asp-for="Fornavn" disabled class="form-control" />
-                              
-                            </div>
-                            <div class="mp-3">
                                 <label asp-for="Efternavn" class="form-label"></label>
                                 <input asp-for="Efternavn" disabled class="form-control" />
-                              
+                           
                             </div>
                             <div class="mp-3">
-                                <label asp-for="Slægtsnavn" class="form-label"></label>
-                                <input asp-for="Slægtsnavn" disabled class="form-control" />
-                               
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="Stilling" class="form-label"></label>
-                                <input asp-for="Stilling" disabled class="form-control" />
-                               
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="Alder" class="form-label"></label>
-                                <input asp-for="Alder" disabled class="form-control" />
-                            
+                                <label asp-for="Fornavne" class="form-label"></label>
+                                <input asp-for="Fornavne" disabled class="form-control" />
+                                
                             </div>
                             <div class="mp-3">
                                 <label asp-for="Fødested" class="form-label"></label>
                                 <input asp-for="Fødested" disabled class="form-control" />
-                           
+                                
                             </div>
+
+
                             <div class="mp-3">
-                                <label asp-for="Fødedato" class="form-label"></label>
-                                <input asp-for="Fødedato" disabled class="form-control" />
-                         
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="Signalement" class="form-label"></label>
-                                <input asp-for="Signalement" disabled class="form-control" />
-                           
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="ProtokolDato" class="form-label"></label>
-                                <input asp-for="ProtokolDato" disabled class="form-control" />
-                             
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="UnderHvisJustits" class="form-label"></label>
-                                <input asp-for="UnderHvisJustits" disabled class="form-control" />
-                              
-                            </div>
-                            <div class="mp-3">
-                                <label asp-for="Årsag" class="form-label"></label>
-                                <input asp-for="Årsag" disabled class="form-control" />
+                                <label asp-for="Alder" class="form-label"></label>
+                                <input asp-for="Alder" disabled class="form-control" />
                                
                             </div>
                             <div class="mp-3">
-                                <label asp-for="SagensUdfald" class="form-label"></label>
-                                <input asp-for="SagensUdfald" disabled class="form-control" />
-                           
+                                <label asp-for="GiftUgift" class="form-label"></label>
+                                <input asp-for="GiftUgift" disabled class="form-control" />
+                            
                             </div>
+
                             <div class="mp-3">
-                                <label asp-for="Domsdato" class="form-label"></label>
-                                <input asp-for="Domsdato" disabled class="form-control" />
+                                <label asp-for="Stilling" class="form-label"></label>
+                                <input asp-for="Stilling" disabled class="form-control" />
                              
                             </div>
+
                             <div class="mp-3">
-                                <label asp-for="Anmærkninger" class="form-label"></label>
-                                <input asp-for="Anmærkninger" disabled class="form-control" />
+                                <label asp-for="Amt" class="form-label"></label>
+                                <input asp-for="Amt" disabled class="form-control" />
+                               
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="SognAdresse" class="form-label"></label>
+                                <input asp-for="SognAdresse" disabled class="form-control" />
                               
                             </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Løbenr" class="form-label"></label>
+                                <input asp-for="Løbenr" disabled class="form-control" />
+                                
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="IndtastNr" class="form-label"></label>
+                                <input asp-for="IndtastNr" disabled class="form-control" />
+                                
+                            </div>
+
                             <div class="mp-3">
                                 <label asp-for="Bemærkninger" class="form-label"></label>
                                 <input asp-for="Bemærkninger" disabled class="form-control" />
                            
                             </div>
 
-                            <div class="mp-3">
-                                <label asp-for="HenvisningsfolieProtolkol" class="form-label"></label>
-                                <input asp-for="HenvisningsfolieProtolkol" disabled class="form-control" />
-                            
-                            </div>
 
 
 

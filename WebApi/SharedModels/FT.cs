@@ -1,0 +1,28 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+
+namespace WebApi.SharedModels
+{
+    public class FT
+    {
+        [Key]
+        public int ID { get; set; }
+        public string? Efternavn { get; set; }
+        public string? Fornavne { get; set; }
+        public string? Fødested { get; set; }
+        public string? Alder { get; set; }
+        public string? GiftUgift { get; set; }
+        public string? Stilling { get; set; }
+        public string? Amt { get; set; }
+        public string? SognAdresse { get; set; }
+        public string? Løbenr { get; set; }
+       
+        public string? IndtastNr { get; set; }
+        
+        public string? Bemærkninger { get; set; }
+
+       
+
+
+    }
+}

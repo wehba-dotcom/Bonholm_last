@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FT1845Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+957c57893d08f5cf17b8f48ab46e3aeb0d1cab99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a80bd867f6c205379c39376ca45aebe73973e08c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FT1845Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FT1845Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
