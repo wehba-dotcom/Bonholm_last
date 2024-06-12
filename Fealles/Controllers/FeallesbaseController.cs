@@ -35,27 +35,60 @@ namespace FeallesBaseApi.Controllers
 
         // GET: api/Feallesbase
         [HttpGet]
-        public  ResponseDto GetFeallesbases()
+        public  ResponseDto GetFeallesbases(string? Fornavne, string? Efternavn, string? Doebenavn, DateTime? Doedsdato, string? Begravelsessted, string? Efterladte)
         {
-
+            var objList = from b in _db.Feallesbases select b;
             try
             {
-                IEnumerable<Feallesbase> objList = _db.Feallesbases.ToList();
-                _response.Result = (objList);
+                if (!String.IsNullOrEmpty(Fornavne))
+                {
+                    objList = objList.Where(b => b.Fornavne.Contains(Fornavne));
+                }
+
+                if (!String.IsNullOrEmpty(Efternavn))
+                {
+                    objList = objList.Where(b => b.Efternavn.Contains(Efternavn));
+                }
+
+                if (!String.IsNullOrEmpty(Doebenavn))
+                {
+                    objList = objList.Where(b => b.Doebenavn.Contains(Doebenavn));
+                }
+
+                if (Doedsdato.HasValue)
+                {
+                    objList = objList.Where(b => b.Doedsdato == Doedsdato.Value);
+                }
+
+                if (!String.IsNullOrEmpty(Begravelsessted))
+                {
+                    objList = objList.Where(b => b.Begravelsessted.Contains(Begravelsessted));
+                }
+
+                if (!String.IsNullOrEmpty(Efterladte))
+                {
+                    objList = objList.Where(b => b.Efterladte.Contains(Efterladte));
+                }
+
+                _response.Result = objList.ToList();
+                _response.IsSuccess = true;
             }
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
                 _response.Message = ex.Message;
             }
-            return _response;
 
+            return _response;
         }
 
+    
 
-        [HttpGet("search/{Fornavne}")]
-        
-        public ResponseDto Search( string? Fornavne)
+
+
+
+        [HttpGet("search")]
+        public ResponseDto Search(string? Fornavne, string? Efternavn, string? Doebenavn, DateTime? Doedsdato, string? Begravelsessted, string? Efterladte)
         {
             var objList = from b in _db.Feallesbases select b;
 
@@ -63,20 +96,70 @@ namespace FeallesBaseApi.Controllers
             {
                 if (!String.IsNullOrEmpty(Fornavne))
                 {
-                    objList = objList.Where(b => b.Fornavne == Fornavne);
-                    _response.Result = objList;
-                }else if(String.IsNullOrEmpty(Fornavne))
-                {
-                    _response.Message = _response?.Message ?? "An unknown error occurred.";
+                    objList = objList.Where(b => b.Fornavne.Contains(Fornavne));
                 }
+
+                if (!String.IsNullOrEmpty(Efternavn))
+                {
+                    objList = objList.Where(b => b.Efternavn.Contains(Efternavn));
+                }
+
+                if (!String.IsNullOrEmpty(Doebenavn))
+                {
+                    objList = objList.Where(b => b.Doebenavn.Contains(Doebenavn));
+                }
+
+                if (Doedsdato.HasValue)
+                {
+                    objList = objList.Where(b => b.Doedsdato == Doedsdato.Value);
+                }
+
+                if (!String.IsNullOrEmpty(Begravelsessted))
+                {
+                    objList = objList.Where(b => b.Begravelsessted.Contains(Begravelsessted));
+                }
+
+                if (!String.IsNullOrEmpty(Efterladte))
+                {
+                    objList = objList.Where(b => b.Efterladte.Contains(Efterladte));
+                }
+
+                _response.Result = objList.ToList();
+                _response.IsSuccess = true;
             }
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
                 _response.Message = ex.Message;
             }
+
             return _response;
         }
+
+        //[HttpGet("search/{Fornavne}")]
+        
+        //public ResponseDto Search( string? Fornavne)
+        //{
+        //    var objList = from b in _db.Feallesbases select b;
+
+        //    try
+        //    {
+        //        if (!String.IsNullOrEmpty(Fornavne))
+        //        {
+        //            objList = objList.Where(b => b.Fornavne == Fornavne);
+        //            _response.Result = objList;
+        //        }else if(String.IsNullOrEmpty(Fornavne))
+        //        {
+        //            _response.Message = _response?.Message ?? "An unknown error occurred.";
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        _response.IsSuccess = false;
+        //        _response.Message = ex.Message;
+        //    }
+        //    return _response;
+        //}
 
 
 

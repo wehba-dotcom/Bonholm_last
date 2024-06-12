@@ -21,11 +21,11 @@ namespace WebApi.Controllers
         }
 
 
-        public async Task<IActionResult> Index(int pg)
+        public async Task<IActionResult> Index(int pg, string? Fornavne, string? Efternavn, string? Doebenavn, DateTime? Doedsdato, string? Begravelsessted, string? Efterladte)
         {
             List<Feallesbase>? list = new();
 
-            ResponseDto? response = await _feallesService.GetAllFeallesesAsync();
+            ResponseDto? response = await _feallesService.GetAllFeallesesAsync( Fornavne, Efternavn,  Doebenavn, Doedsdato, Begravelsessted, Efterladte);
 
             if (response != null && response.IsSuccess)
             {
@@ -53,13 +53,13 @@ namespace WebApi.Controllers
             return View(data);
         }
 
-        public async Task<IActionResult> Search(string? Fornavne)
+        public async Task<IActionResult> Search(string? fornavne, string? efternavn, string? doebenavn, DateTime? doedsdato, string? begravelsessted, string? efterladte)
         {
             List<Feallesbase>? list = new List<Feallesbase>();
 
             try
             {
-                ResponseDto? response = await _feallesService.Search(Fornavne);
+                ResponseDto? response = await _feallesService.Search( fornavne,  efternavn,doebenavn, doedsdato, begravelsessted, efterladte);
 
                 if (response != null && response.IsSuccess)
                 {

@@ -32,21 +32,46 @@ namespace WebApi.Service
             }); 
         }
 
-        public async Task<ResponseDto?> GetAllFeallesesAsync()
+        public async Task<ResponseDto?> GetAllFeallesesAsync(string? fornavne, string? efternavn, string? doebenavn, DateTime? doedsdato, string? begravelsessted, string? efterladte)
         {
+            var query = new Dictionary<string, string>
+            {
+                { "Fornavne", fornavne },
+                { "Efternavn", efternavn },
+                { "Doebenavn", doebenavn },
+                { "Doedsdato", doedsdato?.ToString("yyyy-MM-dd") },
+                { "Begravelsessted", begravelsessted },
+                { "Efterladte", efterladte }
+            };
+
+            var queryString = string.Join("&", query.Where(kvp => !string.IsNullOrEmpty(kvp.Value))
+                                                     .Select(kvp => $"{kvp.Key}={kvp.Value}"));
             return await _baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.GET,
-                Url = SD.FeallesAPIBase + "/api/feallesbase"
+                Url = $"{SD.FeallesAPIBase}/api/feallesbase?{queryString}"
             });
         }
 
-        public async Task<ResponseDto?> Search(string Fornavne)
+        public async Task<ResponseDto?> Search(string? fornavne, string? efternavn, string? doebenavn, DateTime? doedsdato, string? begravelsessted, string? efterladte)
         {
+            var query = new Dictionary<string, string>
+            {
+                { "Fornavne", fornavne },
+                { "Efternavn", efternavn },
+                { "Doebenavn", doebenavn },
+                { "Doedsdato", doedsdato?.ToString("yyyy-MM-dd") },
+                { "Begravelsessted", begravelsessted },
+                { "Efterladte", efterladte }
+            };
+
+            var queryString = string.Join("&", query.Where(kvp => !string.IsNullOrEmpty(kvp.Value))
+                                                     .Select(kvp => $"{kvp.Key}={kvp.Value}"));
             return await _baseService.SendAsync(new RequestDto()
             {
+              
                 ApiType = SD.ApiType.GET,
-                Url = SD.FeallesAPIBase + "/api/feallesbase/search/"+ Fornavne
+                Url = $"{SD.FeallesAPIBase}/api/feallesbase/search?{queryString}"
             });
         }
 

@@ -25,7 +25,7 @@
         </a>
     </div>
     <div class="col-4 text-left ">
-        <a asp-controller="Home" asp-action="GateGory" class="btn btn-primary w-50">
+        <a asp-controller="Feallesbase" asp-action="Index" class="btn btn-primary w-50">
             <i class="bi bi-backspace"></i> Tilbage
         </a>
     </div>
@@ -34,28 +34,73 @@
 
     <hr/>
 
+<style>
+    .form-container div {
+        display: inline-block;
+        margin-right: 10px; /* Adjust as needed */
+    }
+
+    . .required-label::first-line {
+        color: red;
+    }
+
+    .form-container label {
+        margin-right: 5px; /* Adjust as needed */
+    }
+</style>
+
 <div class="form-container">
-      <form asp-controller="Feallesbase" asp-action="Search">
+    <form asp-controller="Feallesbase" asp-action="Search">
         <div>
-            Fornavne: <input type="text" name="Fornavne" />
+            <div>
+                <label for="fornavne">Fornavne:</label>
+                <input type="text" id="fornavne" name="fornavne" required />
+            </div>
        
+            <div>
+                <label for="efternavn">Efternavn:</label>
+                <input type="text" id="efternavn" name="efternavn" />
+            </div>
+
+            <div>
+                <label for="doebenavn">Doebenavn:</label>
+                <input type="text" id="doebenavn" name="doebenavn" />
+            </div>
+            <br />
+            <div>
+                <label for="doedsdato">Doedsdato:</label>
+                <input type="date" id="doedsdato" name="doedsdato" />
+            </div>
+
+            <div>
+                <label for="begravelsessted">Begravelsessted:</label>
+                <input type="text" id="begravelsessted" name="begravelsessted" />
+            </div>
+
+            <div>
+                <label for="efterladte">Efterladte:</label>
+                <input type="text" id="efterladte" name="efterladte" />
+            </div>
+
             <input type="submit" value="Søg" />
-         
-        </div>
-      </form>
-      <br/>
-    <form asp-controller="Feallesbase" asp-action="GetById">
-        <div>
-            ID: <input type="number" name="ID" />
-       
-            <input type="submit" value="Søg" />
-       
         </div>
     </form>
-
 </div>
+
+
     <hr />
     <br />
+
+<form asp-controller="Feallesbase" asp-action="GetById">
+    <div>
+        ID: <input type="number" name="ID" required />
+
+        <input type="submit" value="Søg" />
+
+    </div>
+</form>
+<hr />
+<br />
 
     @if (pager.TotalPages > 0)
     {
