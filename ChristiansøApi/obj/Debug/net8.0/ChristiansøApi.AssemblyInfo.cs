@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChristiansøApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc31d630b951e1c561069ff03db480626d6229d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a307415a7aa7925d2c0f09616f0f7cd81fe9b32")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChristiansøApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChristiansøApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

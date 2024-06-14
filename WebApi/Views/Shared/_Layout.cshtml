@@ -93,12 +93,17 @@
                             border: 1px solid #343a40;
                             font-weight: bold;
                             transition: background-color 0.3s, color 0.3s;
+                            margin-left: -10px; /* Adjust this value to move the icon to the left */
                         }
 
                             .navbar-nav .nav-item .nav-link.logout-icon:hover {
                                 background-color: #343a40;
                                 color: #f8f9fa;
                             }
+
+                        .navbar-nav .nav-item.dropdown .dropdown-menu {
+                            transform: translateX(-75%);
+                        }
                     </style>
                     <ul class="navbar-nav">
                         @if (!User.Identity.IsAuthenticated)
@@ -117,9 +122,11 @@
                             if (!string.IsNullOrEmpty(userName))
                             {
                                 var nameParts = userName.Split(' ');
-                                if (nameParts.Length > 1)
+                                var user = new UserDto(); // Assuming UserDto has properties like FirstName and LastName
+                                var nameParts2 = user.LastName?.Split(' '); // Split last name if it contains multiple parts
+                                if (nameParts.Length > 1 && nameParts2?.Length > 1)
                                 {
-                                    initials = $"{nameParts[0][0]}{nameParts[1][0]}".ToUpper();
+                                    initials = $"{nameParts[0][0]}".ToUpper() + $"{nameParts2[0][0]}".ToUpper(); // First letter of first name + first letter of last name
                                 }
                                 else
                                 {
