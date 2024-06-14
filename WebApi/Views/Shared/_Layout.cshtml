@@ -1,8 +1,6 @@
-﻿@using WebApi.Utility 
+﻿@using WebApi.Utility
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav style=" background-color: #004953" class="navbar  navbar-expand-sm navbar-toggleable-sm navbar-dark  border-bottom box-shadow mb-3">
+        <nav style="background-color: #004953" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3">
             <a class="navbar-brand" href="/">
                 <div class="logo-image">
                     <img src="\images\logo_project.png" class="img-fluid">
@@ -23,35 +21,14 @@
             </a>
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Bornholms Lokalhistorie</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Hjem</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Hjem</a>
                         </li>
-                        @* @if (SignInManager.IsSignedIn(User))
-                        {
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Rolle Adgang
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li class="nav-item">
-                        <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Index">Roller</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Manager">Manager</a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Admin">Admin</a>
-                        </li>
-                        </ul>
-                        </li>
-                        }*@
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Kategorier
@@ -75,7 +52,7 @@
                                 <li>
                                     <a class="dropdown-item" asp-area="" asp-controller="Begrav" asp-action="Index">BegravelseProtokoller</a>
                                 </li>
-                                 <li>
+                                <li>
                                     <a class="dropdown-item" asp-area="" asp-controller="Borger" asp-action="Index">Borgerskab-Rønne</a>
                                 </li>
                                 <li>
@@ -93,37 +70,75 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="User" asp-action="Index">Brugere</a>
+                            <a class="nav-link" asp-area="" asp-controller="User" asp-action="Index">Brugere</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="GateGory">Kategorierer</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="GateGory">Kategorierer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy">Om os</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Om os</a>
                         </li>
                     </ul>
+                    <style>
+                        .navbar-nav .nav-item .nav-link.logout-icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background-color: #f8f9fa;
+                            color: #343a40;
+                            border: 1px solid #343a40;
+                            font-weight: bold;
+                            transition: background-color 0.3s, color 0.3s;
+                        }
+
+                            .navbar-nav .nav-item .nav-link.logout-icon:hover {
+                                background-color: #343a40;
+                                color: #f8f9fa;
+                            }
+                    </style>
                     <ul class="navbar-nav">
                         @if (!User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
-                                <a class="nav-link " asp-controller="Auth" asp-action="Login">Log på</a>
+                                <a class="nav-link" asp-controller="Auth" asp-action="Login">Log på</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " asp-controller="Auth" asp-action="Register">Tilmeld</a>
+                                <a class="nav-link" asp-controller="Auth" asp-action="Register">Tilmeld</a>
                             </li>
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Hello @User.Identity.Name</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " asp-controller="Auth" asp-action="Logout">Log ud</a>
+                            var userName = User.Identity.Name;
+                            var initials = "";
+                            if (!string.IsNullOrEmpty(userName))
+                            {
+                                var nameParts = userName.Split(' ');
+                                if (nameParts.Length > 1)
+                                {
+                                    initials = $"{nameParts[0][0]}{nameParts[1][0]}".ToUpper();
+                                }
+                                else
+                                {
+                                    initials = $"{nameParts[0][0]}".ToUpper();
+                                }
+                            }
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle logout-icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @initials
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <span class="dropdown-item-text">Hej @User.Identity.Name</span>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" asp-controller="Auth" asp-action="Logout">Log ud</a>
+                                </div>
                             </li>
                         }
                     </ul>
                 </div>
-               @*  <partial name="_LoginPartial" /> *@
             </div>
         </nav>
     </header>
@@ -134,9 +149,9 @@
         </main>
     </div>
     <br />
-    <footer style=" background-color: #004953" class="border-top footer text-white text-muted text-center">
+    <footer style="background-color: #004953" class="border-top footer text-white text-muted text-center">
         <div class="container text-white">
-            &copy; 2024 -Lav med <i class="bi bi-suit-heart-fill"></i> Bornholm_Lokal_Historie - <a asp-area="" asp-controller="Home" asp-action="Privacy">Om Os</a>
+            &copy; 2024 - Lav med <i class="bi bi-suit-heart-fill"></i> Bornholm_Lokal_Historie - <a asp-area="" asp-controller="Home" asp-action="Privacy">Om Os</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

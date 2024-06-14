@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArrestprotokollerApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc31d630b951e1c561069ff03db480626d6229d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af01cca65e43fcfaa9ae4414ffb4d5b685f1e974")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArrestprotokollerApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArrestprotokollerApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
