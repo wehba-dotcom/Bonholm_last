@@ -58,7 +58,8 @@ namespace IdentityApi.Service
                 Email = user.Email,
                 ID = user.Id,
                 Name = user.Name,
-                PhoneNumber = user.PhoneNumber
+                PhoneNumber = user.PhoneNumber,
+                LastName= user.LastName
             };
 
             LoginResponse loginResponseDto = new LoginResponse()
@@ -78,7 +79,8 @@ namespace IdentityApi.Service
                 Email = registrationRequestDto.Email,
                 NormalizedEmail = registrationRequestDto.Email.ToUpper(),
                 Name = registrationRequestDto.Name,
-                PhoneNumber = registrationRequestDto.PhoneNumber
+                PhoneNumber = registrationRequestDto.PhoneNumber,
+                LastName = registrationRequestDto.LastName
             };
 
             try
@@ -93,7 +95,8 @@ namespace IdentityApi.Service
                         Email = userToReturn.Email,
                         ID = userToReturn.Id,
                         Name = userToReturn.Name,
-                        PhoneNumber = userToReturn.PhoneNumber
+                        PhoneNumber = userToReturn.PhoneNumber,
+                        LastName = userToReturn.LastName
                     };
 
                     return "";
