@@ -1,4 +1,6 @@
 ﻿﻿@using WebApi.Utility
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,15 +120,18 @@
                         else
                         {
                             var userName = User.Identity.Name;
+
+
                             var initials = "";
                             if (!string.IsNullOrEmpty(userName))
                             {
                                 var nameParts = userName.Split(' ');
-                                var user = new UserDto(); // Assuming UserDto has properties like FirstName and LastName
-                                var nameParts2 = user.LastName?.Split(' '); // Split last name if it contains multiple parts
-                                if (nameParts.Length > 1 && nameParts2?.Length > 1)
+                               // var user = Model.Lastname; // Assuming UserDto has properties like FirstName and LastName
+                               @*  var nameParts2 = user.Split(' '); *@
+                                
+                                if (nameParts.Length > 1 )
                                 {
-                                    initials = $"{nameParts[0][0]}".ToUpper() + $"{nameParts2[0][0]}".ToUpper(); // First letter of first name + first letter of last name
+                                    initials = $"{nameParts[0][0]}".ToUpper() ; // First letter of first name + first letter of last name
                                 }
                                 else
                                 {
@@ -138,7 +143,7 @@
                                     @initials
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <span class="dropdown-item-text">Hej @User.Identity.Name</span>
+                                    <span class="dropdown-item-text"> @User.Identity.Name</span>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" asp-controller="Auth" asp-action="Logout">Log ud</a>
                                 </div>
