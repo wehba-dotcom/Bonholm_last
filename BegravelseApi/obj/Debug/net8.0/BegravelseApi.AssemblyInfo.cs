@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BegravelseApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c842596bcace305bc21dc1dcf5adcf7be5623ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b372d7bee99fc2625ac285cab351cc69561460a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BegravelseApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BegravelseApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

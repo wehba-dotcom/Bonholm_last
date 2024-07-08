@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FæsteProtokollerBog.Controllers
 {
-    [Route("api/FPBog")]
+    [Route("api/fpbog")]
     [ApiController]
     [Authorize]
     public class FPBogController: Controller

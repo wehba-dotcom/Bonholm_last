@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FæsteProtokollerBog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa83cc518f98a18f8a5f188bb79c5119901751d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b372d7bee99fc2625ac285cab351cc69561460a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FæsteProtokollerBog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FæsteProtokollerBog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
