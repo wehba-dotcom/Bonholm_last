@@ -62,9 +62,15 @@ namespace WebApi.Service
         }
 
 
-        public Task<ResponseDto?> UpdateAsync(FPBog fpbog)
+        public async Task<ResponseDto?> UpdateAsync(FPBog fpbog)
         {
-            throw new NotImplementedException();
+            return await _baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.PUT,
+                Data = fpbog,
+                Url = SD.FPBogApiBase + "/api/fpbog",
+                //ContentType = SD.ContentType.MultipartFormData
+            }); throw new NotImplementedException();
         }
     }
 }

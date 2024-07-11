@@ -126,12 +126,11 @@
                             if (!string.IsNullOrEmpty(userName))
                             {
                                 var nameParts = userName.Split(' ');
-                               // var user = Model.Lastname; // Assuming UserDto has properties like FirstName and LastName
-                               @*  var nameParts2 = user.Split(' '); *@
+                              
                                 
-                                if (nameParts.Length > 1 )
+                                if (nameParts[0].Length > 1 )
                                 {
-                                    initials = $"{nameParts[0][0]}".ToUpper() ; // First letter of first name + first letter of last name
+                                    initials = $"{nameParts[0][0]}{nameParts[0][1]}".ToUpper(); // First letter of first name + first letter of last name
                                 }
                                 else
                                 {

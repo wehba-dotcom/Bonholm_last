@@ -1,0 +1,134 @@
+﻿ @model WebApi.SharedModels.FPBog
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-black-50 pl-3">Redigere</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <input asp-for="ID" hidden />
+            <div class="border p-3">
+                <div class="col">
+                    <div class="row-12">
+                        <div class="form-group col">
+
+                            <div class="mp-3">
+                                <label asp-for="Indskrivningsnr" class="form-label"></label>
+                                <input asp-for="Indskrivningsnr" class="form-control" />
+                                <span asp-validation-for="Indskrivningsnr" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="FaesterNavn" class="form-label"></label>
+                                <input asp-for="FaesterNavn" class="form-control" />
+                                <span asp-validation-for="FaesterNavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fornavn" class="form-label"></label>
+                                <input asp-for="Fornavn" class="form-control" />
+                                <span asp-validation-for="Fornavn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Efternavn" class="form-label"></label>
+                                <input asp-for="Efternavn" class="form-control" />
+                                <span asp-validation-for="Efternavn" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="FaesterTilnavn" class="form-label"></label>
+                                <input asp-for="FaesterTilnavn" class="form-control" />
+                                <span asp-validation-for="FaesterTilnavn" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="ForrigeFaesterNavn" class="form-label"></label>
+                                <input asp-for="ForrigeFaesterNavn" class="form-control" />
+                                <span asp-validation-for="ForrigeFaesterNavn" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="ForrigeFaesterFornavn" class="form-label"></label>
+                                <input asp-for="ForrigeFaesterFornavn" class="form-control" />
+                                <span asp-validation-for="ForrigeFaesterFornavn" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="ForrigeFaesterEfternavn" class="form-label"></label>
+                                <input asp-for="ForrigeFaesterEfternavn" class="form-control" />
+                                <span asp-validation-for="ForrigeFaesterEfternavn" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="ForrigeFaesterTilnavnmm" class="form-label"></label>
+                                <input asp-for="ForrigeFaesterTilnavnmm" class="form-control" />
+                                <span asp-validation-for="ForrigeFaesterTilnavnmm" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Kommentarer" class="form-label"></label>
+                                <input asp-for="Kommentarer" class="form-control" />
+                                <span asp-validation-for="Kommentarer" class="text-danger"></span>
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Gaard" class="form-label"></label>
+                                <input asp-for="Gaard" class="form-control" />
+                                <span asp-validation-for="Gaard" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Sogn" class="form-label"></label>
+                                <input asp-for="Sogn" class="form-control" />
+                                <span asp-validation-for="Sogn" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="FaestebrevUdstedt" class="form-label"></label>
+                                <input asp-for="FaestebrevUdstedt" class="form-control" />
+                                <span asp-validation-for="FaestebrevUdstedt" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Side" class="form-label"></label>
+                                <input asp-for="Side" class="form-control" />
+                                <span asp-validation-for="Side" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Bog" class="form-label"></label>
+                                <input asp-for="Bog" class="form-control" />
+                                <span asp-validation-for="Bog" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Film" class="form-label"></label>
+                                <input asp-for="Film" class="form-control" />
+                                <span asp-validation-for="Film" class="text-danger"></span>
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Herred" class="form-label"></label>
+                                <input asp-for="Herred" class="form-control" />
+                                <span asp-validation-for="Herred" class="text-danger"></span>
+                            </div>
+
+                        </div>
+                        </br>
+                        <div class="form-group row">
+                            <div class="col-8 offset-2 row">
+                                <div class="col">
+                                    <input type="submit" value="Update" class="btn btn-primary w-75" />
+                                </div>
+                                <div class="col">
+                                    <a asp-action="Index" class="btn btn-primary w-75">TilBage</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
