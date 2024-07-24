@@ -24,23 +24,48 @@ namespace GårdsRegApi.Controllers
 
         // GET: api/gårdreg
         [HttpGet]
-        public ResponseDto GetAll(string? Fornavne, string? Efternavn, string? Doebenavn, DateTime? Doedsdato, string? Begravelsessted, string? Efterladte)
+        public ResponseDto GetAll(string? Fornavne, string? Efternavn, string? ÆgtefællesFornavne, string? ÆgtefællesEfternavn)
         {
             try
             {
                 IEnumerable<GårdReg> objList = _db.GårdRegistreringer.ToList();
 
+                if (!String.IsNullOrEmpty(Fornavne))
+                {
+                    objList = objList.Where(b => b.Fornavne == Fornavne);
+                }
 
-                _response.Result = (objList);
+                if (!String.IsNullOrEmpty(Efternavn))
+                {
+                    objList = objList.Where(b => b.Efternavn == Efternavn);
+                }
+
+                
+
+                if (!String.IsNullOrEmpty(ÆgtefællesFornavne))
+                {
+                    objList = objList.Where(b => b.ÆgtefællesFornavne == ÆgtefællesFornavne);
+                }
+
+                if (!String.IsNullOrEmpty(ÆgtefællesEfternavn))
+                {
+                    objList = objList.Where(b => b.ÆgtefællesEfternavn == ÆgtefællesEfternavn);
+                }
+
+              
+
+                _response.Result = objList;
+                _response.IsSuccess = true;
             }
             catch (Exception ex)
             {
                 _response.IsSuccess = false;
                 _response.Message = ex.Message;
             }
-            return _response;
 
+            return _response;
         }
+
 
 
         [HttpGet("search/{Fornavne}")]

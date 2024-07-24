@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GårdRegApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95de2aa9b73d338f555560dd07029a6cc4b33ff5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+221c528338e33f47953f31e012a140c33f907fe8")]
 [assembly: System.Reflection.AssemblyProductAttribute("GårdRegApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GårdRegApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
