@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BorgerskabApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9b8e22bbe5b66afc28210fee1aca811d3a6d27c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95de2aa9b73d338f555560dd07029a6cc4b33ff5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BorgerskabApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BorgerskabApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -136,33 +136,6 @@ namespace FeallesBaseApi.Controllers
             return _response;
         }
 
-        //[HttpGet("search/{Fornavne}")]
-        
-        //public ResponseDto Search( string? Fornavne)
-        //{
-        //    var objList = from b in _db.Feallesbases select b;
-
-        //    try
-        //    {
-        //        if (!String.IsNullOrEmpty(Fornavne))
-        //        {
-        //            objList = objList.Where(b => b.Fornavne == Fornavne);
-        //            _response.Result = objList;
-        //        }else if(String.IsNullOrEmpty(Fornavne))
-        //        {
-        //            _response.Message = _response?.Message ?? "An unknown error occurred.";
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _response.IsSuccess = false;
-        //        _response.Message = ex.Message;
-        //    }
-        //    return _response;
-        //}
-
-
-
 
 
 

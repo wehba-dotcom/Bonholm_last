@@ -1,0 +1,6 @@
+@FødteDødeApi_HostAddress = http://localhost:5217
+
+GET {{FødteDødeApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

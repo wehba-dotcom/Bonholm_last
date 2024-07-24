@@ -1,0 +1,6 @@
+@GiftteApi_HostAddress = http://localhost:5163
+
+GET {{GiftteApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

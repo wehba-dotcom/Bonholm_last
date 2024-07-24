@@ -1,0 +1,6 @@
+@BorgerskabRønneApi_HostAddress = http://localhost:5106
+
+GET {{BorgerskabRønneApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
