@@ -18,6 +18,9 @@
         public static string FotoAPIBase { get; set; }
         public static string FtAPIBase { get; set; }
         public static string FPBogApiBase { get; set; }
+        public static string GårdRegApiBase { get; set; }
+
+
 
         public const string RoleAdmin = "ADMIN";
         public const string RoleCustomer = "CUSTOMER";

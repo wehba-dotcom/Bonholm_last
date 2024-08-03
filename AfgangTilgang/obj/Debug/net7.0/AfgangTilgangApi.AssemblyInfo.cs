@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AfgangTilgangApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95de2aa9b73d338f555560dd07029a6cc4b33ff5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1588bf6a9cef2abbe06cb550001931f396fd66ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("AfgangTilgangApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AfgangTilgangApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

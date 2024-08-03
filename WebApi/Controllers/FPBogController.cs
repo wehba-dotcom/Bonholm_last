@@ -53,35 +53,7 @@ namespace WebApi.Controllers
             return View(data);
         }
 
-        //public async Task<IActionResult> Search(string? fornavne, string? efternavn, string? doebenavn, DateTime? doedsdato, string? begravelsessted, string? efterladte)
-        //{
-        //    List<Feallesbase>? list = new List<Feallesbase>();
-
-        //    try
-        //    {
-        //        ResponseDto? response = await _feallesService.Search( fornavne,  efternavn,doebenavn, doedsdato, begravelsessted, efterladte);
-
-        //        if (response != null && response.IsSuccess)
-        //        {
-        //            list = JsonConvert.DeserializeObject<List<Feallesbase>>(Convert.ToString(response.Result)) ?? new List<Feallesbase>();
-        //        }
-        //        else
-        //        {
-        //            TempData["error"] = response?.Message ?? "An unknown error occurred.";
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Log the exception (you might want to use a logging framework for this)
-        //        TempData["error"] = $"An error occurred while searching: {ex.Message}";
-        //    }
-
-        //    return View(list);
-        //}
-
-
-
-
+       
 
         public async Task<IActionResult> Create()
         {

@@ -1,0 +1,192 @@
+﻿@model WebApi.SharedModels.GårdReg
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-black-50 pl-3 ">Slet Side</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+
+        <form asp-action="Delete">
+            <input asp-for="ID" hidden />
+            <div class="border p-3">
+                <div class="col">
+                    <div class="row-12">
+                        <div class="form-group col">
+                            <div class="mp-3">
+                                <label asp-for="ID" class="form-label"></label>
+                                <input asp-for="ID" disabled class="form-control" />
+                           
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Ejernr" class="form-label"></label>
+                                <input asp-for="Ejernr" disabled class="form-control" />
+                           
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Gårdnummer" class="form-label"></label>
+                                <input asp-for="Gårdnummer" disabled class="form-control" />
+                                
+                            </div>
+
+
+                            <div class="mp-3">
+                                <label asp-for="Overtagelsesår" class="form-label"></label>
+                                <input asp-for="Overtagelsesår" disabled class="form-control" />
+                                
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Kilde" class="form-label"></label>
+                                <input asp-for="Kilde" disabled class="form-control" />
+                                
+                            </div>
+
+
+                            <div class="mp-3">
+                                <label asp-for="Fornavne" class="form-label"></label>
+                                <input asp-for="Fornavne" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Efternavn" class="form-label"></label>
+                                <input asp-for="Efternavn" disabled class="form-control" />
+                                
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Efternavn_kort" class="form-label"></label>
+                                <input asp-for="Efternavn_kort" disabled class="form-control" />
+                                
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Slægtsnavn" class="form-label"></label>
+                                <input asp-for="Slægtsnavn" disabled class="form-control" />
+                                
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="SE_navn" class="form-label"></label>
+                                <input asp-for="SE_navn" disabled class="form-control" />
+                               
+                            </div>
+
+                            <div class="mp-3">
+                                <label asp-for="Født" class="form-label"></label>
+                                <input asp-for="Født" disabled class="form-control" />
+                              
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Fødesogn" class="form-label"></label>
+                                <input asp-for="Fødesogn" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Gift" class="form-label"></label>
+                                <input asp-for="Gift" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Giftesogn" class="form-label"></label>
+                                <input asp-for="Giftesogn" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Død" class="form-label"></label>
+                                <input asp-for="Død" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Begravetsogn" class="form-label"></label>
+                                <input asp-for="Begravetsogn" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="HansForældre" class="form-label"></label>
+                                <input asp-for="HansForældre" disabled class="form-control" />
+                                
+
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="ÆgtefællesFornavne" class="form-label"></label>
+                                <input asp-for="ÆgtefællesFornavne" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Æ_Efternavn_kort" class="form-label"></label>
+                                <input asp-for="Æ_Efternavn_kort" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Æ_Slægtsnavn" class="form-label"></label>
+                                <input asp-for="Æ_Slægtsnavn" disabled class="form-control" />
+                               
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="SÆ_Navn" class="form-label"></label>
+                                <input asp-for="SÆ_Navn" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="HendesFødeår" class="form-label"></label>
+                                <input asp-for="HendesFødeår" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="HendesDødsår" class="form-label"></label>
+                                <input asp-for="HendesDødsår" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="HendesBegravelsesogn" class="form-label"></label>
+                                <input asp-for="HendesBegravelsesogn" disabled class="form-control" />
+                             
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Hendesforældre" class="form-label"></label>
+                                <input asp-for="Hendesforældre" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="ØvrigeOplysninger" class="form-label"></label>
+                                <input asp-for="ØvrigeOplysninger" disabled class="form-control" />
+                            
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Kommentarer" class="form-label"></label>
+                                <input asp-for="Kommentarer" disabled class="form-control" />
+                                
+                            </div>
+                            <div class="mp-3">
+                                <label asp-for="Gårdnavnveddenneejer" class="form-label"></label>
+                                <input asp-for="Gårdnavnveddenneejer" disabled class="form-control" />
+                               
+                            </div>
+
+
+
+                            <br />
+                            <div class="form-group row">
+                                <div class="col-8 offset-2 row">
+                                    <div class="col">
+                                        <input type="submit" class="btn btn-primary w-75" value="Slet" />
+                                    </div>
+                                    <div class="col">
+                                        <a asp-action="Index" class="btn btn-primary w-75">TilBage</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+
+

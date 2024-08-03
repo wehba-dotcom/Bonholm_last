@@ -2,8 +2,8 @@
 {
     public class ResponseDto
     {
-        public string Message { get; set; } = "";
+        public object? Result { get; set; }
         public bool IsSuccess { get; set; } = true;
-        public Object? Result { get; set; }
+        public string Message { get; set; } = "";
     }
 }

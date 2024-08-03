@@ -1,7 +1,10 @@
-﻿namespace GårdRegApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GårdRegApi.Models
 {
     public class GårdReg
     {
+        [Key]
         public int ID { get; set; }
         public int Ejernr { get; set; }
         public short Gårdnummer { get; set; }

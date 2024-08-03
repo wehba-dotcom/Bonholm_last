@@ -8,7 +8,7 @@ namespace GårdsRegApi.Controllers
 {
     [Route("api/gårdreg")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class GårdRegController : Controller
     {
         private readonly DbAppContext _db;
@@ -141,7 +141,7 @@ namespace GårdsRegApi.Controllers
 
         // PUT: api/gårdreg/5
         [HttpPut]
-        public ResponseDto Put(GårdReg ft)
+         public ResponseDto Put(GårdReg ft)
         {
             try
             {

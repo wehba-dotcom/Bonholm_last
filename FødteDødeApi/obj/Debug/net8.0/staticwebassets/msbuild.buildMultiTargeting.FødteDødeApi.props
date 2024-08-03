@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\FødteDødeApi.props" />
-</Project>
