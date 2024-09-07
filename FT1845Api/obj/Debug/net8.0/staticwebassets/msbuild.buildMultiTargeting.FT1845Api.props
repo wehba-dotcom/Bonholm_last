@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FT1845Api.props" />
+</Project>
