@@ -1,0 +1,208 @@
+[
+  {
+    "ContainingType": "FeallesBaseApi.Controllers.FeallesbaseController",
+    "Method": "GetFeallesbases",
+    "RelativePath": "api/feallesbase",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fornavne",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Efternavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Doebenavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Doedsdato",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Begravelsessted",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Efterladte",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FeallesBaseApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FeallesBaseApi.Controllers.FeallesbaseController",
+    "Method": "Create",
+    "RelativePath": "api/feallesbase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feallesbase",
+        "Type": "FeallesBaseApi.Models.Feallesbase",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FeallesBaseApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FeallesBaseApi.Controllers.FeallesbaseController",
+    "Method": "Put",
+    "RelativePath": "api/feallesbase",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feallesbase",
+        "Type": "FeallesBaseApi.Models.Feallesbase",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FeallesBaseApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FeallesBaseApi.Controllers.FeallesbaseController",
+    "Method": "GetFeallesbase",
+    "RelativePath": "api/feallesbase/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FeallesBaseApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FeallesBaseApi.Controllers.FeallesbaseController",
+    "Method": "DeleteFeallesbase",
+    "RelativePath": "api/feallesbase/{ID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FeallesBaseApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FeallesBaseApi.Controllers.FeallesbaseController",
+    "Method": "Search",
+    "RelativePath": "api/feallesbase/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fornavne",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Efternavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Doebenavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Doedsdato",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Begravelsessted",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Efterladte",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FeallesBaseApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "ContainingType": "AfgangTilgangApi.Controllers.AfgangTilgangController",
+    "Method": "GetAgangtilgangs",
+    "RelativePath": "api/afgangtilgang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "AfgangTilgangApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AfgangTilgangApi.Controllers.AfgangTilgangController",
+    "Method": "Create",
+    "RelativePath": "api/afgangtilgang",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "afgangtilgang",
+        "Type": "AfgangTilgangApi.Models.AfgangTilgang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AfgangTilgangApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AfgangTilgangApi.Controllers.AfgangTilgangController",
+    "Method": "Put",
+    "RelativePath": "api/afgangtilgang",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "afgangTilgang",
+        "Type": "AfgangTilgangApi.Models.AfgangTilgang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AfgangTilgangApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AfgangTilgangApi.Controllers.AfgangTilgangController",
+    "Method": "GetAfgangTilgang",
+    "RelativePath": "api/afgangtilgang/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AfgangTilgangApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AfgangTilgangApi.Controllers.AfgangTilgangController",
+    "Method": "DeleteAgangtilgang",
+    "RelativePath": "api/afgangtilgang/{ID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AfgangTilgangApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AfgangTilgangApi.Controllers.AfgangTilgangController",
+    "Method": "Search",
+    "RelativePath": "api/afgangtilgang/search/{Fornavn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fornavn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AfgangTilgangApi.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

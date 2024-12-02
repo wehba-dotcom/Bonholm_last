@@ -1,0 +1,58 @@
+[
+  {
+    "ContainingType": "F\u00F8dteD\u00F8deApi.Controllers.F\u00F8deD\u00F8deController",
+    "Method": "GetAll",
+    "RelativePath": "api/f\u00F8dted\u00F8de",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fornavne",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Efternavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sl\u00E6gtsnavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "F\u00F8dt",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "F\u00F8desogn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "D\u00F8d",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "D\u00F8dssted",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "F\u00F8dteD\u00F8deApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

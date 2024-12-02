@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "GifteApi.Controllers.gifteController",
+    "Method": "GetAll",
+    "RelativePath": "api/gifte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "GifteApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "ContainingType": "G\u00E5rdsRegApi.Controllers.G\u00E5rdRegController",
+    "Method": "GetAll",
+    "RelativePath": "api/g\u00E5rdreg",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fornavne",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Efternavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "\u00C6gtef\u00E6llesFornavne",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "\u00C6gtef\u00E6llesEfternavn",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "G\u00E5rdRegApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "G\u00E5rdsRegApi.Controllers.G\u00E5rdRegController",
+    "Method": "Create",
+    "RelativePath": "api/g\u00E5rdreg",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ft",
+        "Type": "G\u00E5rdRegApi.Models.G\u00E5rdReg",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "G\u00E5rdRegApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "G\u00E5rdsRegApi.Controllers.G\u00E5rdRegController",
+    "Method": "Put",
+    "RelativePath": "api/g\u00E5rdreg",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ft",
+        "Type": "G\u00E5rdRegApi.Models.G\u00E5rdReg",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "G\u00E5rdRegApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "G\u00E5rdsRegApi.Controllers.G\u00E5rdRegController",
+    "Method": "GetById",
+    "RelativePath": "api/g\u00E5rdreg/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "G\u00E5rdRegApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "G\u00E5rdsRegApi.Controllers.G\u00E5rdRegController",
+    "Method": "Delete",
+    "RelativePath": "api/g\u00E5rdreg/{ID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "G\u00E5rdRegApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "G\u00E5rdsRegApi.Controllers.G\u00E5rdRegController",
+    "Method": "Search",
+    "RelativePath": "api/g\u00E5rdreg/search/{Fornavne}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fornavne",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "G\u00E5rdRegApi.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

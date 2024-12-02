@@ -1,0 +1,157 @@
+[
+  {
+    "ContainingType": "F\u00E6steProtokollerBog.Controllers.FPBogController",
+    "Method": "GetAll",
+    "RelativePath": "api/fpbog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Fornavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Efternavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ForrigeFaesterFornavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ForrigeFaesterEfternavn",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Gaard",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sogn",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "F\u00E6steProtokollerBog.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "F\u00E6steProtokollerBog.Controllers.FPBogController",
+    "Method": "Create",
+    "RelativePath": "api/fpbog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fpbog",
+        "Type": "F\u00E6steProtokollerBog.Models.FPBog",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "F\u00E6steProtokollerBog.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "F\u00E6steProtokollerBog.Controllers.FPBogController",
+    "Method": "Put",
+    "RelativePath": "api/fpbog",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fpbog",
+        "Type": "F\u00E6steProtokollerBog.Models.FPBog",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "F\u00E6steProtokollerBog.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "F\u00E6steProtokollerBog.Controllers.FPBogController",
+    "Method": "GetById",
+    "RelativePath": "api/fpbog/{ID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "F\u00E6steProtokollerBog.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "F\u00E6steProtokollerBog.Controllers.FPBogController",
+    "Method": "DeleteFeallesbase",
+    "RelativePath": "api/fpbog/{ID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "F\u00E6steProtokollerBog.Models.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
